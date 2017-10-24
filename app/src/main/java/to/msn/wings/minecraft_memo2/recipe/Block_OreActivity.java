@@ -52,6 +52,42 @@ public class Block_OreActivity extends Activity {
                 ImageView imageView1 = (ImageView)findViewById(imgviewId);
                 imageView1.setImageDrawable(res.getDrawable(draId));
                 break;
+            case 1:
+            case 2:
+            case 4:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+            case 12:
+            case 13:
+            case 16:
+            case 17:
+            case 18:
+            case 19:
+            case 21:
+            case 23:
+            case 24:
+            case 25:
+            case 26:
+            case 27:
+            case 28:
+            case 29:
+            case 30:
+            case 31:
+            case 32:
+            case 33:
+            case 34:
+            case 35:
+            case 36:
+            case 37:
+            case 38:
+            case 39:
+            case 40:
+            case 41:
+            case 42:
+                break;
         }
     }
     public void onClick(View v){

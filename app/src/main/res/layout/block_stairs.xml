@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/stairs"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="木材/丸石/砂岩/石レンガ/ネザーレンガ/レンガブロック/ネザー水晶ブロック/赤砂岩/プルプァブロック：6
+通常のブロックと同じ高さの階段。これを足場にすることで、段差をジャンプすることなく移動できる。また、その形状から屋根の建材、イス等の家具にもなる。
+砂岩と石レンガは模様入り等の亜種からや、原種亜種混合でも作れるが、
+完成したブロックの見た目は通常の砂岩、通常の石レンガに準拠する。
+ただし、木材で作る場合は木の種類ごとに色の区別があるため、素材を一種類に統一しなくてはならない。
+木の階段は火をつけたり、近くに火気や溶岩等の熱源があると延焼する。"
+    android:textSize="20dp"/>
+
+</LinearLayout>

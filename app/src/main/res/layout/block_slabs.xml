@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/slabs"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="木材/丸石/砂岩/石/石レンガ/レンガ/ネザーレンガブロック/ネザー水晶ブロック/赤砂岩/プルプァブロック：3
+通常のブロックの半分の高さのブロック。
+見た目は元のブロックを半分にしたものだが、例外的に石ハーフブロックは固有のテクスチャーに変化する。
+砂岩と石レンガは模様入り等の亜種からや、原種亜種混合でも作れるが、
+完成したブロックの見た目は通常の砂岩、通常の石レンガに準拠する。
+ただし、木材で作る場合は木の種類ごとに色の区別があるため、素材を一種類に統一しなくてはならない。
+木のハーフブロックは火をつけたり、近くに火気や溶岩等の熱源があると延焼する。
+ハーフブロックにすると数が元の倍になるため、長い足場づくりをする際に有用。
+また、下付きハーフブロックの上には敵がスポーンしない。"
+        android:textSize="20dp"/>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stone_brick"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="石：4
+建材として利用できる。
+ダンジョン、要塞で見かけられるブロック。丸石をかまどで焼いて出来た石を４つ並べてクラフトすることで作成する。また石レンガを精錬すると、ヒビの入った石レンガになり、これにツタを加えると、苔石レンガにできる。"
+        android:textSize="20dp"/>
+
+</LinearLayout>

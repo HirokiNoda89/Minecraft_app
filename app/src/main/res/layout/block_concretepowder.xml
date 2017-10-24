@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutid">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/concrete_powder"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="染料：1　砂：4　砂利：4
+ver1.12にて追加。
+真下に個体ブロックが無いと砂や砂利のように落下する。
+また水源や水流に触れるとコンクリートに変化する。"
+        android:textSize="20dp"/>
+
+</LinearLayout>

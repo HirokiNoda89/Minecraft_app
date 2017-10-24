@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="to.msn.wings.minecraft_memo2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListActivity" />
+        <activity
+            android:name=".CreateMemoActivity"
+            android:label="test" />
+        <activity android:name=".recipe.RecipeActivity" />
+        <activity android:name=".recipe.BaseActivity" />
+        <activity android:name=".recipe.BlockActivity" />
+        <activity android:name=".recipe.ToolActivity"/>
+        <activity android:name=".recipe.ArmorActivity"/>
+        <activity android:name=".recipe.TruckActivity"/>
+        <activity android:name=".recipe.MachineActivity"/>
+        <activity android:name=".recipe.FoodActivity"/>
+        <activity android:name=".recipe.BrewingActivity"/>
+        <activity android:name=".recipe.DyeActivity"/>
+        <activity android:name=".recipe.OtherActivity"/>
+
+        <activity android:name=".recipe.Base_WoodActivity" />
+        <activity android:name=".recipe.Block_OreActivity" />
+        <activity android:name=".recipe.Tool_AxeActivity"/>
+        <activity android:name=".recipe.Armor_HelmetsActivity"/>
+        <activity android:name=".recipe.Truck_MinecartActivity"/>
+        <activity android:name=".recipe.Machine_Wooden_doorActivity"/>
+        <activity android:name=".recipe.Food_BowlActivity"/>
+        <activity android:name=".recipe.Brewing_StandActivity"/>
+        <activity android:name=".recipe.Dye_RoseRedActivity"/>
+        <activity android:name=".recipe.Other_EnchantmentTable_Activity"/>
+    </application>
+
+</manifest>

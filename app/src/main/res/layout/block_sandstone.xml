@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sandstone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="砂：4/砂岩：4/砂岩ハーフブロック：2
+主に砂漠の地面深くに存在するが、砂を4つ並べることでも作成できる。建材に向いており、ピラミッドでは建材として利用されている。
+砂ブロックと違い引力による影響を受けない。
+レシピパターンを変えると側面の模様が変化する。
+パターン1：砂×4 → 砂岩
+パターン2：砂岩/模様入り砂岩×4 → 滑らかな砂岩×4
+パターン3：砂岩ハーフブロック×2 → 模様入り砂岩
+滑らかな砂岩と模様入り砂岩は一定数以上あれば相互変換が可能。
+ハーフブロックにして重ねて設置すれば、擬似的に通常の砂岩ブロックにも戻せる。"
+        android:textSize="20dp"/>
+
+</LinearLayout>

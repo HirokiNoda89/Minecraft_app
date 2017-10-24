@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chest"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="木材：8
+中にアイテムを収納できる。
+二個並べて設置すると、一つの大きなチェスト(ラージチェスト)になる。
+ラージチェストの横にはチェストを置くことができない。
+周囲に火気や溶岩等の熱源があっても延焼しないが、爆破される等して壊されると中のアイテムが全て飛び出す。"
+        android:textSize="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="鉄インゴット/金インゴット/ダイヤモンド/ラピスラズリ/エメラルド/レッドストーン/石炭：9
+9つ鉱石資源を固めて作られる。
+ブロックを加工し直して各種素材に戻すことも出来るので、アイテム欄を節約したい際に重宝する。見た目から、高級な建築素材としても活用できる。
+石炭ブロックは燃料に使用可能。
+レッドストーンブロック（後述）はRS回路に使用可能で、常に動力を発する性質を持つ。
+石炭ブロックは、火をつけたり近くに火気や溶岩等の熱源があると延焼する。"
+        android:textSize="20dp"/>
+
+</LinearLayout>

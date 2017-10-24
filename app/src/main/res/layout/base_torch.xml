@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/torch"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="石炭/木炭：1　棒：1
+設置すると14レベルの光を放つ。そのため、近くの雪と氷を溶かす。
+周囲の可燃物に引火することはない。"
+        android:textSize="20dp"/>
+
+</LinearLayout>

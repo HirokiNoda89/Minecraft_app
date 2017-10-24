@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teracotta"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="テラコッタ：8　染料：1
+ver1.6 から追加
+羊毛と同様に色を付けることができ、建材として利用できる。ウールと違って引火しない。
+染料16種に無着色を加え、計17種類のテラコッタが存在する。"
+        android:textSize="20dp"/>
+
+</LinearLayout>

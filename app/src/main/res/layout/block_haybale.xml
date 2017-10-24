@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hay_bale"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="小麦：9
+ver1.6 から追加
+小麦を省スペースに保管したり、馬にあげることで、馬のHPを 10 回復する。　設置時、原木と同じように、縦置きと横置きに置くことができる。
+鉱石ブロック同様、ブロックから元の小麦に加工し直せられる。
+可燃性がある。"
+        android:textSize="20dp"/>
+
+</LinearLayout>

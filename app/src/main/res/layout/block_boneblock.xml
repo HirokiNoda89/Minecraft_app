@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bone_block"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="骨粉：9
+ver1.10にて追加。
+砂漠/沼地バイオーム(亜種含む)に、「化石」として各チャンク1/64の確率で自然生成される。
+原木などと同じで、設置する方向によって見た目が変わる。"
+        android:textSize="20dp"/>
+
+</LinearLayout>

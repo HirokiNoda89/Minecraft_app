@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tnt"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="火薬：5　砂/赤砂：4
+火打ち石と打ち金による着火、RS回路による信号で点火し、爆発させることができる。この爆発はクリーパーのものよりも強力で、洞窟開拓や整地といった場面で重宝する。ワンクリックですぐ回収できる上に引力による落下もしないので、建築の足場に便利という一面もある。
+火薬はクリーパー、ガストから入手可能。
+火炎の矢を当てたり近くに火気がある場合、引火して爆発する。また、別の爆発物の爆風の届く範囲に置くと誘爆する性質を持つので、取り扱いには注意すること。"
+        android:textSize="20dp"/>
+
+</LinearLayout>

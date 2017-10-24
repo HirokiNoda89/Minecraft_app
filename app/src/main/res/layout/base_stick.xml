@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stick"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="木材：2
+主に他のレシピの素材となり、松明や矢、看板、はしご、道具類の柄などに使用する。
+かまどの燃料にもなるが、すぐに燃え尽きるので精錬にはかなりの数が必要。
+ver1.9から 砂漠、メサ、メガタイガなどにある枯れ木を壊したときに、0～4本ドロップするようになった。"
+        android:textSize="20dp"/>
+
+</LinearLayout>

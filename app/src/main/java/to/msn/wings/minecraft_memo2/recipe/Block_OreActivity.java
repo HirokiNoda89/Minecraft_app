@@ -87,6 +87,11 @@ public class Block_OreActivity extends Activity {
             case 40:
             case 41:
             case 42:
+                setContentView(R.layout.base_wood);
+                textView = (TextView)findViewById(viewId);
+                textView.setText(res.getString(strId));
+                imageView1 = (ImageView)findViewById(imgviewId);
+                imageView1.setImageDrawable(res.getDrawable(draId));
                 break;
         }
     }

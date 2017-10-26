@@ -32,7 +32,7 @@ public class MachineActivity extends Activity {
         intent = new Intent(MachineActivity.this, Machine_Wooden_doorActivity.class);
 
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.truck_base);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.tool_base);
         listview = (ListView) findViewById(R.id.listview);
 
         for (String str : members) {

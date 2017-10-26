@@ -8,30 +8,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/gif1"/>
 
-    <ScrollView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:id="@+id/gif2"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="羊毛：3　木材：3
-夜にのみ使用可能。(雷雨時には何故か昼夜関係なく使用可能。)
-右クリックすると寝て、時間を朝にする。
-昼夜サイクルが変更されるだけで時間経過はしないため、寝ている間にかまどでの精錬が済んだり、ポーションの効き目が消えたり、ということはない。
+        android:id="@+id/textView"/>
 
-ベッドで寝るとリスポーン地点がそのベッドに変更される。
-リスポーン時にベッドが塞がれていると初期リスポーン地点にリスポーンする。
-縦5m、横10mの範囲内に敵対Mobが存在する場合は眠ることができない。
-水中やガラス・雪の上などには設置不可。
-ネザーやジ・エンドでベッドを使用すると爆発する。
-マルチプレイヤーでリスポーン地点を変えたい場合、眠る前に一度「ベッドから出る」をクリックする必要がある。
-
-ver1.12から、同色の羊毛を使用しないとクラフトできなくなった。
-使用した羊毛の色と同じ色のベッドが作れるようになり、
-また、ベッドと染料をクラフトすると色の変更が可能になった。"
-        android:textSize="20dp"/>
-
-    </ScrollView>
 
 </LinearLayout>

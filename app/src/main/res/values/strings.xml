@@ -197,19 +197,44 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
     <drawable name="blockItem43">@drawable/concrete_powder_iloveimg_resized</drawable>
 
     <string name="other0">本：1　ダイヤモンド：2　黒曜石：4 \n 各種道具(クワを除く)や武具に経験値とラピスラズリを消費して様々な特殊効果をつけることができる。</string>
+    <drawable name="otherItem0">@drawable/enchantmenttable</drawable>
+
     <string name="other1">鉄：4　鉄ブロック：3 \n 経験値を消費してアイテムに名前をつけたり、各種道具武具の修理やエンチャント効果の合成ができる。 耐久値が無くなると壊れる。</string>
+    <drawable name="otherItem1">@drawable/anvil</drawable>
+
     <string name="other2">ネザースター：1　ガラス：5　黒曜石：3 \n ver1.4.2 から追加 15レベルの明るさを放ち、このブロックを中心とする一定範囲にいる間ポーションの効果を得ることができる。 作成、稼働ともに相当なコストがかかる。</string>
+    <drawable name="otherItem2">@drawable/beacon</drawable>
+
     <string name="other3">鉄ブロック/金ブロック/ダイヤモンドブロック/ラピスラズリブロック/エメラルドブロック：1 \n 作った鉱物ブロックを戻せる。</string>
+    <drawable name="otherItem3">@drawable/ore_iloveimg_resized</drawable>
+
     <string name="other4">金塊：9 \n ゾンビピッグマンが落とす金塊9個で金インゴットが作成可能。</string>
+    <drawable name="otherItem4">@drawable/gold_ingot</drawable>
+
     <string name="other5">金インゴット：1 \n 金インゴットと金ブロックが可逆なように、金塊と金インゴットの変換も可逆。 ver1.11.2より金製装備を精錬しても作成できるようになった。</string>
+    <drawable name="otherItem5">@drawable/goldnugget</drawable>
+
     <string name="other6">鉄塊：9 \n ver1.11.2から追加 鉄製装備を精錬した時にできる素材9個で鉄インゴットが作成可能。</string>
+    <drawable name="otherItem6">@drawable/iron_ingot</drawable>
+
     <string name="other7">鉄インゴット：1 \n ver1.11.2から追加 鉄インゴットと鉄ブロックが可逆なように、鉄塊と鉄インゴットの変換も可逆。</string>
+    <drawable name="otherItem7">@drawable/iron_nugget</drawable>
+
     <string name="other8">レッドストーンブロック：1 \n 還元レシピ。</string>
+    <drawable name="otherItem8">@drawable/redstone_reduction</drawable>
+
     <string name="other9">棒：8　羊毛：1 \n 壁に貼ることができ、飾りとして使える。 中央の羊毛はどの色でも構わない。 絵の中身、大きさは設置時にランダムで決まる。しかし設置場所にスペースが足りないと大きな絵は出現しない。</string>
+    <drawable name="otherItem9">@drawable/painting</drawable>
+
     <string name="other10">棒：8　革：1 \n アイテムを中に入れて飾ることができる。 地図、時計など一部のアイテムは額縁に入れても機能を発揮する。 地図を入れた場合、額縁は表示されずマスいっぱいに地図が表示される。</string>
+    <drawable name="otherItem10">@drawable/itemframe</drawable>
+
     <string name="other11">レンガ：3 \n 苗木、キノコ、花、サボテン、シダ、枯れ木を植えて飾ることができる。</string>
+    <drawable name="otherItem11">@drawable/flowerpot</drawable>
+
     <string name="other12">木材：6　棒：1 \n 壁か床に置き、置く時に文章を入力できる。 日本語の入力はプラットフォームによってはできない。またチャット窓と異なりコピペは不可。 当たり判定はなく水や溶岩などの液体の流れを遮断する。</string>
-    <string name="other13">棒：7 \n 壁面に貼り付けると昇り降りが出来るようになる。 無操作中にスニークをするとその高さで留まる。 水流を遮断する。 スニーク中は物を破壊するスピードが遅くなる。</string>
+    <drawable name="otherItem12">@drawable/sign</drawable>
+
     <string name="other14">サトウキビ：3\n
 本や地図を作るのに必要。
 村人がエメラルドと交換してくれる。</string>
@@ -218,57 +243,164 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
     <string name="other15">紙：3　革：1　(※配置不問)\n
 本棚やエンチャントテーブルを作るのに必要。</string>
     <drawable name="otherItem15">@drawable/book</drawable>
+
     <string name="other16">ウサギの毛皮：4</string>
+    <drawable name="otherItem16">@drawable/leather</drawable>
+
     <string name="other17">スライムブロック：1</string>
+    <drawable name="otherItem17">@drawable/slime_ball</drawable>
+
     <string name="other18">木材：4 棒：2 \n 高さが1.5ブロック相当という特殊な判定のため、ジャンプによるMobの侵入を防ぐ。 ただし横方向の幅は見た目通り1ブロックより小さめである。 これ一つだけでは杭だが、フェンスゲートの横や他の立方体ブロックやフェンスに隣接させると 隙間に棒が張られてフェンスになり、当たり判定も補正される。 1ブロック扱いのため、上にはみ出した0.5ブロックを無視してブロックを設置したり水を流すことができる。 火をつけたり、近くに火気や溶岩等の熱源があると延焼する。  横幅は0.25で両側に0.375の隙間ができる。 ver1.8から、棒のみで作成するレシピは破棄され、既存のフェンスはオークのフェンスとなり、 その他の素材のフェンスが5種類追加された。例外的に、木材のフェンスとネザーレンガフェンスはつながらずmobが通れるほどの隙間ができる。　 異なる種類の木材では作成不可となった。</string>
+    <drawable name="otherItem18">@drawable/fence</drawable>
+
     <string name="other19">ネザーレンガ：6 \n ネザーレンガ版のフェンスです。 当たり判定やブロックとの接続は普通のフェンスと変わらないが、 このフェンス以外とは接続されない。 木のフェンスと異なり、耐燃性がある。 横幅は0.25で両側に0.375の隙間ができる。</string>
+    <drawable name="otherItem19">@drawable/nether_brick_fence</drawable>
+
     <string name="other20">丸石/苔石：6 \n ver1.4.2 から追加 フェンスに近い性質を持つ。 石製なので耐燃性がある。 厚みは0.5で、両側に0.25の隙間ができる。</string>
+    <drawable name="otherItem20">@drawable/cobblestone_wall</drawable>
+
     <string name="other21">鉄インゴット：6 \n 隣に鉄格子かブロック(階段とハーフブロック除く)があるとそれに繋がる形になる。 フェンスと違って高さは1ブロック相当で、加えて見た目通りの薄い判定しか持たないため、 配置によってはMobが通れる隙間や、足がかりができてしまうことがあるのでフェンスの代用として使うときは注意が必要。 厚みが0.13で両側に0.4375の隙間ができる。</string>
+    <drawable name="otherItem21">@drawable/ironbar</drawable>
+
     <string name="other22">羊毛：2 \n ver1.6 から追加 床に敷き詰めて置くことで、装飾に使うことができる。 装飾での使い方によっては、素晴らしい効果を発揮する。 カーペットの上には敵がスポーンしない。</string>
+    <drawable name="otherItem22">@drawable/carpet</drawable>
+
     <string name="other23">ガラス：6 \n 薄いガラス。 隣に板ガラスかブロック(階段とハーフブロック除く)があるとそれに繋がる形になる。 当たり判定については鉄格子と同様である。 壊してもアイテム化しない。エンチャント効果の「シルクタッチ」でなら回収が可能。 厚みが0.13で両側に0.4375の隙間ができる。 ver1.9から 単体ではフェンスと同じく棒状になるようになった。 ver1.9以前は十字型になっていた。</string>
+    <drawable name="otherItem23">@drawable/glasspane</drawable>
+
     <string name="other24">色付きガラス：6 \n 色がついたこと以外の詳細は板ガラスとまったく同じ。 板ガラスに直接染料を並べることでクラフトはできず、 染色済みのガラスからでないと作成できない。</string>
+    <drawable name="otherItem24">@drawable/stained_glass_pane</drawable>
+
     <string name="other25">骨：1 \n 染料の材料。 肥料として作物や苗木にも使える。 草ブロックに対して使うと、周囲に背丈の低い草や花などが生える。 また、キノコに使うとキノコを巨大化させることができる。また、骨ブロックの材料。</string>
+    <drawable name="otherItem25">@drawable/bonemeal</drawable>
+
     <string name="other25_1">骨ブロック：1 \n　 作りすぎたときに使える還元レシピ。</string>
+    <drawable name="otherItem25_1">@drawable/bone_meal</drawable>
+
     <string name="other26">スイカ：1 \n 農地に植えて栽培することができる。</string>
+    <drawable name="otherItem26">@drawable/melonseeds</drawable>
+
     <string name="other27">カボチャ：1 \n 農地に植えて栽培することができる。</string>
+    <drawable name="otherItem27">@drawable/pumpkinseeds</drawable>
+
     <string name="other28">エンダーパール：1　ブレイズパウダー：1　(※配置不問) \n 手に持って投げると要塞の方向に飛んでいく。 但し投げた後、20％の確率で消滅してしまう。 要塞にあるエンドポータルを修復するのにも必要。</string>
+    <drawable name="otherItem28">@drawable/eye_of_ender</drawable>
+
     <string name="other29">エンダーアイ：1　黒曜石：8 \n 他のエンダーチェストと中身を共有する特殊なチェスト。 複数設置しても参照する中身は同一の物となるので、この中に入れたものは爆風などでチェストの中身が放出→ロストする危険が無くなる。 ただし、通常のチェストのように二つをつなげることができない。 破壊すると黒曜石8個をドロップし、エンダーアイは失われる。 シルクタッチの付いたつるはしを使用することでエンダーチェストのまま回収できる。 (ツルハシの種類は問わず、木のツルハシでも回収可能である)</string>
+    <drawable name="otherItem29">@drawable/enderchest</drawable>
+
     <string name="other30">火薬：1　染料：1～8　追加材料：0～3　(※配置不問) \n 詳細はこちらへ→レシピ/花火 花火の星を作製する際に使用する花火の玉。 最低火薬1個、染料1個で作成可能。 複数の染料を混ぜると花火の星にして打ち上げた際に色が混ざる。 また、追加の材料を加えることで花火の大きさや形を変えることができる。</string>
+    <drawable name="otherItem30">@drawable/fireworkstar</drawable>
+
     <string name="other30_1">花火の星：1　染料：1～8　(※配置不問) \n 上で作製した花火の星に更に染料を追加すると、フェード効果を追加でき、打ち上げた時に色が変化するようになる。 既にフェードが付いている花火の星を使用してこのレシピでクラフティングすると、フェード効果が上書きされる。</string>
+    <drawable name="otherItem30_1">@drawable/firework_star</drawable>
+
     <string name="other31">火薬：1～3　紙：1　花火の星：0～7　(※配置不問) \n 右クリックで使用したり、ディスペンサーに入れてレッドストーン信号を入力することで花火を打ち上げる。 花火の星を使用せずに作成することもできるが、その場合花火は表示されない。 火薬の数が多いほど、花火が開く高さが高くなる。 花火の星を複数使用することもできる。 ver1.10から クラフトで得られる個数が３個になった。</string>
+    <drawable name="otherItem31">@drawable/rocket2</drawable>
+
     <string name="other32">各色羊毛：6 棒：1 \n 通称バナー。 ver1.8から染料とクラフトすることで様々な模様をつけることができる。</string>
+    <drawable name="otherItem32">@drawable/banner</drawable>
+
     <string name="other32_1">旗：1　染料：適宜  旗：1　染料：1　模様用アイテム※：1  \n  ※ツタ/レンガ/フランスギク/クリーパーの頭/ウィザースケルトンの頭/金のリンゴ（上位） 染料のみを使用するレシピは染料の配置は固定だが旗の場所はどこでもよい。 模様用アイテムを使うレシピは配置不問。 すでに模様を付けた旗を使えばレイヤーを重ねることができる。ただしサバイバルでは(旗自体のクラフトを除いて)６回までしか重ねられない。</string>
+    <drawable name="otherItem32_1">@drawable/banner_design</drawable>
+
     <string name="other33">棒：6 石ハーフブロック：1 \n ver1.8にて追加。 防具を飾ることができる。 石以外のハーフブロックでは作成できない。 装飾での使い方によっては、素晴らしい効果を発揮する。</string>
+    <drawable name="otherItem33">@drawable/armor_stand</drawable>
+
     <string name="other34">ガラス：7　エンダーアイ：1　ガストの涙：1 \n エンドの黒曜石柱の上で見つけることができる。 主な目的はエンダードラゴンの体力回復であり、 エンダードラゴンは最寄のクリスタルの範囲に入ると体力が回復する。 エンダードラゴンが体力回復中にそのクリスタルを破壊すると、ドラゴンは少しのダメージを受ける。 エンダークリスタルの爆発はTNTより50%強く、致命傷になりやすい。 エンダードラゴンを倒した後の帰還ポータルに四個これを並べると、エンダードラゴンが復活して、再戦できる。ただし、卵は一度倒した以降はもらえない。</string>
+    <drawable name="otherItem34">@drawable/ender_crystal</drawable>
+
     <string name="other35">ブレイズロッド：1　焼いたコーラスフルーツ：1 \n エンドシティで自然に生成される光源ブロック。松明と同じ14レベルの光を放つ。 ブロックのどこにでもつけることができ、 また付いているブロックが壊されてもエンドロッドは破壊されない。 個体ブロック扱いのため、上に砂や砂利などの重力の影響を受けるブロックが落ちてきても、そのブロックはアイテム化しない。 そのため、ピストンで押し出しや引き戻しをすることができる。 また、エンドシティ内では、塔を登るための階段として用いられることがある。</string>
+    <drawable name="otherItem35">@drawable/end_rod</drawable>
+
     <string name="other36">シュルカーの殻：2　チェスト：1 \n シュルカーボックス 1ブロック分のチェストと同じ働きを持つ。 違いは「中身ごと持ち運べる」点で、チェストは破壊した時に中のアイテムをばら撒いてしまう事に対し、シュルカーボックスはばら撒かず、収納した中身を保持したままアイテム化する。そのため性質上エンダーチェストと兼用して使うと拡張インベントリとして使える。 シュルカーボックスの中にシュルカーボックスを入れることはできない。 染料で色を変えられる(全１６色)。 また、ピストンで押し出すとアイテム化し、ディスペンサーで設置できる。</string>
+    <drawable name="otherItem36">@drawable/shulker_box</drawable>
+
     <string name="dye0">ポピー/ビートルート：1 \n 赤色の染料。レッド。</string>
+    <drawable name="dyeItem0">@drawable/dye_rose_red</drawable>
+    <drawable name="dyeItem0_1">@drawable/betrut</drawable>
+
     <string name="dye1">黄色の染料：1　　赤色の染料：1 \n 橙色の染料。オレンジ。</string>
+    <drawable name="dyeItem1">@drawable/dye_orange</drawable>
+
     <string name="dye2">タンポポ：1 \n 黄色の染料。イエロー。</string>
+    <drawable name="dyeItem2">@drawable/dye_dandelion_yellow</drawable>
+
     <string name="dye3">緑色の染料(※1)：1　白色の染料(※2)：1 \n 黄緑色の染料。ライム。</string>
+    <drawable name="dyeItem3">@drawable/dye_lime</drawable>
+
     <string name="dye4">緑の染料(※1)：1　青の染料(※2)：1 \n 水色の染料。シアン。</string>
+    <drawable name="dyeItem4">@drawable/dye_cyan</drawable>
+
     <string name="dye5">白の染料(※2)：1　青の染料(※2)：1 \n 空色の染料。ライトブルー。</string>
+    <drawable name="dyeItem5">@drawable/crafting_dye_lightblue</drawable>
+
     <string name="dye6">赤の染料：1　青の染料(※2)：1 \n 紫色の染料。パープル。</string>
+    <drawable name="dyeItem6">@drawable/dye_purple</drawable>
+
     <string name="dye7">紫の染料：1　ピンクの染料：1 \n 赤紫色の染料。マゼンタ。</string>
+    <drawable name="dyeItem7">@drawable/dye_magenta</drawable>
+
     <string name="dye8">赤の染料：1　白の染料(※2)：1 \n 桃色の染料。ピンク。</string>
+    <drawable name="dyeItem8">@drawable/dye_pink</drawable>
+
     <string name="dye9">白の染料(※2)：1　灰色の染料：1 \n 薄灰色の染料。ライトグレー。</string>
+    <drawable name="dyeItem9">@drawable/dye_lightgray</drawable>
+
     <string name="dye10">白の染料(※2)：1　黒の染料(※2)：1 \n 灰色の染料。グレー。</string>
+    <drawable name="dyeItem10">@drawable/dye_gray</drawable>
+
     <string name="brewing0">レイズロッド：1　丸石：3 \n 各種素材を使って、ポーションを作ることができる。 一つの素材を最大3つのポーションに添加できる。 ver1.9 から醸造にはブレイズパウダーが必要になり、パウダー1つで２０回の醸造ができる。 素手で壊すとアイテム化しない。回収にはツルハシが必要。 また、光源ブロックであり、1レベルの光を放つ。</string>
+    <drawable name="brewingItem0">@drawable/brewing_stand</drawable>
+
     <string name="brewing1">ガラス：3 \n ポーションを入れる器になる。 水源か、水の入った大釜から水を取ることができる。 ポーションと同じで飲むことができるが、効果は全くない。 空のビンのみスタック可能。 ver1.9 からドラゴンブレスを取ることができるようになった。 ドラゴンブレスは残留ポーションの作成に使用される。</string>
+    <drawable name="brewingItem1">@drawable/glassbottle</drawable>
+
     <string name="brewing2">鉄インゴット：7 \n 魔女の家に自然生成される。 水バケツを使用することでポーション用に水を汲んでおくことができる。 ガラスの瓶3つ分の水が溜められる。 水が入っている状態で壊しても、水が手に入るようなことはない。 ネザーで水を入れても水が消滅しない特性があり、これを利用して引火ダメージを食らっている際にここに浸かれば即座に鎮火できる。 ver1.9 からバケツで大釜の水が汲めるようになった。</string>
+    <drawable name="brewingItem2">@drawable/cauldron</drawable>
+
     <string name="brewing3">クモの眼：1　茶キノコ：1　砂糖：1　(※配置不問) \n 主にマイナスの効果を持つポーションの材料になる。</string>
+    <drawable name="brewingItem3">@drawable/fermented_spider_eye</drawable>
+
     <string name="brewing4">スライムボール：1　ブレイズパウダー：1　(※配置不問) \n 耐火のポーションの材料になる。 マグマキューブを倒したときに落とすことがある。 ポーション以外の用途はほとんどない。 これ4つでマグマブロックを作成することもできる。</string>
+    <drawable name="brewingItem4">@drawable/magma_cream</drawable>
+
     <string name="brewing5">ブレイズロッド：1 \n ブレイズロッドから作成可能。力のポーション、エンダーアイ、マグマクリームなどの材料になる。 ver1.9 から醸造台の燃料として使用するようになった。</string>
+    <drawable name="brewingItem5">@drawable/blaze_powder</drawable>
+
     <string name="brewing6">スイカ：1　金塊：8　 スイカ：1　金塊：1(1.6以前) \n 治癒のポーションの材料になる。この状態だと直接食べることができなくなる。</string>
+    <drawable name="brewingItem6">@drawable/glistering_melon</drawable>
+
     <string name="brewing7">ニンジン：1　金塊：8 \n 食べると満腹度が3回復する。 暗視ポーションの材料になる。 腹持ち7.2</string>
+    <drawable name="brewingItem7">@drawable/goldencarrot</drawable>
+
     <string name="food0">木材：3 \n キノコシチュー、ウサギシチュー、ビートルートスープを作るのに使う。</string>
+    <drawable name="foodItem0">@drawable/bowl</drawable>
+
     <string name="food1">小麦：2　カカオ豆：1 \n 満腹度を1回復する。β1.8以前でスタックできた唯一の食べ物。 ジャングル実装で素材のカカオ豆の入手が容易になり、効果も増加したため、気軽に食べられるようになった。 腹持ち0.2</string>
+    <drawable name="foodItem1">@drawable/cookie</drawable>
+
     <string name="food2">赤キノコ：1　茶キノコ：1　ボウル：1　(※配置不問) \n 満腹度を3回復する。 他の食料と違ってスタック出来ない。 ムーシュルームに対して右クリックすることでも手に入る。 食べるとボウルのみが残る。 腹持ち3.6</string>
+    <drawable name="foodItem2">@drawable/mushroomstew</drawable>
+
     <string name="food3">小麦：3 \n 満腹度を2.5回復する。 腹持ち3</string>
+    <drawable name="foodItem3">@drawable/bread</drawable>
+
     <string name="food4">リンゴ：1　金インゴット：8  リンゴ：1　金塊：8　(1.5.2以前) \n 食べると満腹度が2回復し、更に5秒間回復速度が上がる。極稀にモンスターハウスの宝箱から手に入る。 腹持ち4.8 ver1.5.2以前まで低いコストで出来たが、ver1.6以降コストが高くなった</string>
+    <drawable name="foodItem4">@drawable/golden_apple</drawable>
+
     <string name="food5">サトウキビ：1 \n パンプキンパイ、ケーキの材料。 また、ポーションの材料にもなる。</string>
+    <drawable name="foodItem5">@drawable/sugar</drawable>
+
     <string name="food6">カボチャ：1　砂糖：1　卵：1　(※配置不問) \n 満腹度を4回復する。 腹持ち2.4</string>
+    <drawable name="foodItem6">@drawable/pumpkinpie</drawable>
+
     <string name="food7">牛乳：3　砂糖：2　卵：1　小麦：3 \n 持った状態で右クリックすると地面に設置。 その状態でさらに右クリックすると満腹度を1回復。 6回まで食べられる。 牛乳は中身だけ消費し、空のバケツが作業台に残る。 腹持ち0.2x6 ※一度設置するとアイテム化しないため回収不可。 どうしても撤去したい場合は6回使い、食べきった方が良い。</string>
+    <drawable name="foodItem7">@drawable/cake</drawable>
+
     <string name="food8">焼き兎肉：1　ニンジン：1　ベークドポテト：1　キノコ：1　ボウル：1 \n 満腹度を5回復する。 キノコシチューと同じくスタック出来ない。 食べるとボウルのみが残る。 瞬間満腹度は最高峰だが、隠し満腹度は焼肉類よりやや劣る。</string>
+    <drawable name="foodItem8">@drawable/rabbit_stew</drawable>
+
     <string name="food9">ビートルート：6　ボウル：1 \n ver1.9より追加(PE版からの逆移植) 満腹度を3回復する。 キノコシチューと同じくスタック出来ない。 食べるとボウルのみが残る。</string>
+    <drawable name="foodItem9">@drawable/soup</drawable>
 </resources>

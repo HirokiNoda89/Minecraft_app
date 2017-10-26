@@ -21,34 +21,7 @@ public class Truck_MinecartActivity extends Activity {
 
         switch (key){
             case 0:
-                setContentView(R.layout.block_ore);
-                break;
-            case 1:
-                setContentView(R.layout.block_ore);
-                break;
-            case 2:
-                setContentView(R.layout.block_ore);
-                break;
-            case 3:
-                setContentView(R.layout.block_ore);
-                break;
-            case 4:
-                setContentView(R.layout.block_ore);
-                break;
-            case 5:
-                setContentView(R.layout.block_ore);
-                break;
-            case 6:
-                setContentView(R.layout.block_ore);
-                break;
-            case 7:
-                setContentView(R.layout.block_ore);
-                break;
-            case 8:
-                setContentView(R.layout.block_ore);
-                break;
-            case 9:
-                setContentView(R.layout.block_ore);
+                setContentView(R.layout.base_wood);
                 break;
         }
     }

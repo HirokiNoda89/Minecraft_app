@@ -107,36 +107,95 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
     <drawable name="blockItem13">@drawable/chiseled_stone_bricks</drawable>
 
     <string name="block14">砂：4/砂岩：4/砂岩ハーフブロック：2 \n 主に砂漠の地面深くに存在するが、砂を4つ並べることでも作成できる。建材に向いており、ピラミッドでは建材として利用されている。 砂ブロックと違い引力による影響を受けない。 レシピパターンを変えると側面の模様が変化する。 パターン1：砂×4 → 砂岩 パターン2：砂岩/模様入り砂岩×4 → 滑らかな砂岩×4 パターン3：砂岩ハーフブロック×2 → 模様入り砂岩 滑らかな砂岩と模様入り砂岩は一定数以上あれば相互変換が可能。 ハーフブロックにして重ねて設置すれば、擬似的に通常の砂岩ブロックにも戻せる。</string>
+    <drawable name="blockItem14">@drawable/sandstone_iloveimg_resized</drawable>
 
     <string name="block15">赤砂：4/赤い砂岩：4/赤い砂岩ハーフブロック：2 \n 14w32aにて追加。メサバイオームのみに存在する。</string>
+    <drawable name="blockItem15">@drawable/red_sandstone_iloveimg_resized</drawable>
+
     <string name="block16">木材：6　本：3 \n 飾りとして使用できるほか、 エンチャントテーブルと組み合わせると強力なエンチャントを引き出す事が出来る。 これを壊すと本×3をドロップする。下手に設置して壊したりすると木材のムダになってしまうので注意。 シルクタッチが付いた斧で本棚そのまま回収可能 火をつけたり、近くに火気や溶岩等の熱源があると延焼する。</string>
+    <drawable name="blockItem16">@drawable/bookcase</drawable>
+
     <string name="block17">カボチャ：1　松明：1 \n カボチャは地上に稀に存在し、一カ所につき1～14個程度が散らばっている。 明るさレベルは15。また、下にブロックがないと設置出来ない（設置後下に置いたブロックを壊せば浮かせることが出来る。）。</string>
+    <drawable name="blockItem17">@drawable/jackolantern</drawable>
+
     <string name="block18">スイカ：9 \n 四角いが立派なスイカ。壊すと割れ、切ったスイカがたくさん落ちる。シルクタッチでそのまま回収可能。なお、切ったスイカは、収穫前の状態に戻すことが出来る。</string>
+    <drawable name="blockItem18">@drawable/melon</drawable>
+
     <string name="block19">ネザー水晶：4 \n 石英。その美しい見た目から、高級な建材として利用できる。ただし、耐久力はあまり無い。 また上記と同じ配置で階段、ハーフブロックにクラフト可能。</string>
+    <drawable name="blockItem19">@drawable/blockofquartz</drawable>
+
     <string name="block20">ネザー水晶ブロック：2/ネザー水晶ハーフブロック：2 \n 建材として利用できる。 ブロックは柱型、ハーフブロックは模様入りのブロックになる。</string>
+    <drawable name="blockItem20">@drawable/quartz_block_iloveimg_resized</drawable>
+
     <string name="block21">小麦：9 \n ver1.6 から追加 小麦を省スペースに保管したり、馬にあげることで、馬のHPを 10 回復する。　設置時、原木と同じように、縦置きと横置きに置くことができる。 鉱石ブロック同様、ブロックから元の小麦に加工し直せられる。 可燃性がある。</string>
+    <drawable name="blockItem21">@drawable/hay_bale</drawable>
+
     <string name="block22">テラコッタ：8　染料：1 \n ver1.6 から追加 羊毛と同様に色を付けることができ、建材として利用できる。ウールと違って引火しない。 染料16種に無着色を加え、計17種類のテラコッタが存在する。</string>
+    <drawable name="blockItem22">@drawable/clay_block_iloveimg_resized</drawable>
+
     <string name="block23">ガラス：8　染料：1 \n ver1.7 から追加 やや半透明の色付きガラス。装飾として使用できる。</string>
+    <drawable name="blockItem23">@drawable/stained_glass_iloveimg_resized</drawable>
+
     <string name="block24">スライムボール：9 \n ver1.8 から追加 このブロックによるダメージはなく、高さによってバウンドする。 落ちてきた高さの８割の高さ、バウンドする。</string>
+    <drawable name="blockItem24">@drawable/slime_block</drawable>
+
     <string name="block25">閃緑岩：1　ネザー水晶：1 \n ver1.8から追加</string>
+    <drawable name="blockItem25">@drawable/granite</drawable>
+
     <string name="block26">丸石：1　閃緑岩：1 \n ver1.8から追加</string>
+    <drawable name="blockItem26">@drawable/andesite</drawable>
+
     <string name="block27">ネザー水晶：2　丸石：2 \n ver1.8から追加</string>
+    <drawable name="blockItem27">@drawable/diorite</drawable>
+
     <string name="block28">花崗岩：4 \n ver1.8から追加 建材として利用できる。</string>
+    <drawable name="blockItem28">@drawable/polished_granite</drawable>
+
     <string name="block29">安山岩：4 \n ver1.8から追加 建材として利用できる。</string>
+    <drawable name="blockItem29">@drawable/polished_andesite</drawable>
+
     <string name="block30">閃緑岩：4 \n ver1.8から追加 建材として利用できる。</string>
+    <drawable name="blockItem30">@drawable/polished_diorite</drawable>
+
     <string name="block31">丸石：1　ツル：1 \n ver1.8からレシピの追加 メガタイガバイオームや、地下のモンスタースポナーで生成される。丸石とは違い、石にすることなどはできない。</string>
+    <drawable name="blockItem31">@drawable/moss_stone</drawable>
+
     <string name="block32">土：2　砂利：2 \n ver1.7から追加。 ver1.8からレシピの追加。 草が生えない土。テクスチャが普通の土よりやや暗めになっている。けもの道など通る目印に向いている。</string>
+    <drawable name="blockItem32">@drawable/coarse_dirt</drawable>
+
     <string name="block33">プリズマリンの欠片：4 \n ver1.8から追加 海底神殿に生成されるブロック。</string>
+    <drawable name="blockItem33">@drawable/prismarine</drawable>
+
     <string name="block34">プリズマリンの欠片：9 \n ver1.8から追加 海底神殿に生成されるブロック。</string>
+    <drawable name="blockItem34">@drawable/prismarine_bricks</drawable>
+
     <string name="block35">プリズマリンの欠片：8　イカスミ：1 \n ver1.8から追加 海底神殿に生成されるブロック。</string>
+    <drawable name="blockItem35">@drawable/prismarine_dark</drawable>
+
     <string name="block36">プリズマリンの欠片：4　プリズマリンクリスタル：5 \n ver1.8から追加 海底神殿に生成されるブロック。 光源効果があるので、照明などに利用できる。 シルクタッチの効果が付いたツールでないと回収できない。</string>
+    <drawable name="blockItem36">@drawable/sea_lantern</drawable>
+
     <string name="block37">エンドストーン：４ \n エンドシティで発見できる装飾ブロック。回収にはツルハシが必要。</string>
+    <drawable name="blockItem37">@drawable/end_stone_brick</drawable>
+
     <string name="block38">焼いたコーラスフルーツ：4 \n エンドシティで発見できる装飾ブロック。回収にはツルハシが必要。</string>
+    <drawable name="blockItem38">@drawable/purpur_block</drawable>
+
     <string name="block39">マグマクリーム：4 \n クラフトと自然生成があり、自然生成の場合、ネザーの溶岩の近くに生成される。 触れているMobや防具(盾を除く)はダメージを受ける。 ドロップアイテムは破壊しない。 プレイヤーは、スニークをするか氷渡りのブーツを履くことで、ダメージを回避できる。 マグマブロックの上に水が置かれている場合、ランダムで水が煙のパーティクルとともに消滅する。 また、マグマブロックは隣り合った光源ブロックの明るさを保持する。 マグマブロックの近くに光源ブロックを置くと、 マグマブロックが受けた明るさと同じ明るさの光を放つようになる。 光源ブロックが無くなっても明るさを保つ。 マグマブロックは光源ブロックであり、元々の明るさは３である。 明るさの限度は15。</string>
+    <drawable name="blockItem39">@drawable/magma_block_recipe</drawable>
+
     <string name="block40">ネザーウォート：9 \n ver1.10にて追加。  ネザーウォートブロックからネザーウォートへは戻せない。 用途は不明。</string>
+    <drawable name="blockItem40">@drawable/nether_wart_block_recipe</drawable>
+
     <string name="block41">ネザーレンガ：2　ネザーウォート：2 \n 赤みを帯びたネザーレンガ。入手法がクラフトのみで自然生成はされない。 耐燃性があり、主に装飾に使われる。</string>
+    <drawable name="blockItem41">@drawable/red_nether_brick_recipe</drawable>
+
     <string name="block42">骨粉：9 \n ver1.10にて追加。  砂漠/沼地バイオーム(亜種含む)に、「化石」として各チャンク1/64の確率で自然生成される。 原木などと同じで、設置する方向によって見た目が変わる。</string>
+    <drawable name="blockItem42">@drawable/bone_block</drawable>
+
     <string name="block43">染料：1　砂：4　砂利：4 \n ver1.12にて追加。  真下に個体ブロックが無いと砂や砂利のように落下する。 また水源や水流に触れるとコンクリートに変化する。</string>
+    <drawable name="blockItem43">@drawable/concrete_powder_iloveimg_resized</drawable>
+
     <string name="other0">本：1　ダイヤモンド：2　黒曜石：4 \n 各種道具(クワを除く)や武具に経験値とラピスラズリを消費して様々な特殊効果をつけることができる。</string>
     <string name="other1">鉄：4　鉄ブロック：3 \n 経験値を消費してアイテムに名前をつけたり、各種道具武具の修理やエンチャント効果の合成ができる。 耐久値が無くなると壊れる。</string>
     <string name="other2">ネザースター：1　ガラス：5　黒曜石：3 \n ver1.4.2 から追加 15レベルの明るさを放ち、このブロックを中心とする一定範囲にいる間ポーションの効果を得ることができる。 作成、稼働ともに相当なコストがかかる。</string>

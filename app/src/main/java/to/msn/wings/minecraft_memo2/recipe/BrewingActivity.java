@@ -28,7 +28,7 @@ public class BrewingActivity extends Activity {
         intent = new Intent(BrewingActivity.this, Brewing_StandActivity.class);
 
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.food_base);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_base);
         listview = (ListView) findViewById(R.id.listview);
 
         for (String str : members) {

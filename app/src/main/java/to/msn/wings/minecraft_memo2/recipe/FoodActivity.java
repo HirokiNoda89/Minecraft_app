@@ -29,7 +29,7 @@ public class FoodActivity extends Activity {
         intent = new Intent(FoodActivity.this, Food_BowlActivity.class);
 
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.food_base);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_base);
         listview = (ListView) findViewById(R.id.listview);
 
         for (String str : members) {

@@ -20,9 +20,10 @@ public class Other_EnchantmentTable_Activity extends Activity {
 
     int viewId;
     int strId;
-    int draId;
-    int imgviewId;
-
+    int draId1;
+    int imgviewId1;
+    int draId2;
+    int imgviewId2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,136 +32,84 @@ public class Other_EnchantmentTable_Activity extends Activity {
         int key = intent.getIntExtra("key",0);
 
         Resources res = getResources();
-        strId = res.getIdentifier("text" + key,"string",getPackageName());
+        strId = res.getIdentifier("other" + key,"string",getPackageName());
         viewId = res.getIdentifier("textView","id",getPackageName());
-        draId = res.getIdentifier("item" + key,"drawable",getPackageName());
-        imgviewId = res.getIdentifier("imageview","id",getPackageName());
-
-
-
+        draId1 = res.getIdentifier("otherItem" + key,"drawable",getPackageName());
+        imgviewId1 = res.getIdentifier("gif1","id",getPackageName());
+        draId2 = res.getIdentifier("otherItem" + key + "_" + 1,"drawable",getPackageName());
+        imgviewId2 = res.getIdentifier("gif2","id",getPackageName());
 
         switch (key){
             case 0:
-                setContentView(R.layout.other_enchantmenttable);
-                break;
             case 1:
-                setContentView(R.layout.other_anvil);
-                break;
             case 2:
-                setContentView(R.layout.other_beacon);
-                break;
-            case 3:
-                setContentView(R.layout.other_ore);
-                ImageView imageView = (ImageView) findViewById(R.id.gif1);
-                GlideDrawableImageViewTarget target = new GlideDrawableImageViewTarget(imageView);
-                Glide.with(this).load(R.drawable.ore_iloveimg_resized).into(target);
-                break;
             case 4:
-                setContentView(R.layout.other_gold_ingot);
-                break;
             case 5:
-                setContentView(R.layout.other_goldnugget);
-                break;
             case 6:
-                setContentView(R.layout.other_iron_ingot);
-                break;
             case 7:
-                setContentView(R.layout.other_ironnugget);
-                break;
             case 8:
-                setContentView(R.layout.other_redstone);
-                break;
             case 9:
-                setContentView(R.layout.other_painting);
-                break;
             case 10:
-                setContentView(R.layout.other_item_frame);
-                break;
             case 11:
-                setContentView(R.layout.other_flowerpot);
-                break;
             case 12:
-                setContentView(R.layout.other_sign);
-                break;
             case 13:
-                setContentView(R.layout.other_ladder);
-                break;
             case 14:
-                setContentView(R.layout.other_paper);
+            case 15:
+            case 16:
+            case 17:
+            case 19:
+            case 21:
+            case 23:
+            case 26:
+            case 27:
+            case 28:
+            case 29:
+            case 33:
+            case 34:
+            case 35:
+            case 36:
+                setContentView(R.layout.base_wood);
                 TextView textView = (TextView)findViewById(viewId);
                 textView.setText(res.getString(strId));
-                ImageView imageView1 = (ImageView)findViewById(imgviewId);
-                imageView1.setImageDrawable(res.getDrawable(draId));
+                ImageView imageView1 = (ImageView)findViewById(imgviewId1);
+                imageView1.setImageDrawable(res.getDrawable(draId1));
                 break;
-            case 15:
-                setContentView(R.layout.other_paper);
+            case 3:
+            case 18:
+            case 20:
+            case 22:
+            case 24:
+            case 31:
+                setContentView(R.layout.base_wood);
+                ImageView imageView = (ImageView) findViewById(R.id.gif1);
+                GlideDrawableImageViewTarget target = new GlideDrawableImageViewTarget(imageView);
+                Glide.with(this).load(draId1).into(target);
                 textView = (TextView)findViewById(viewId);
                 textView.setText(res.getString(strId));
-                imageView1 = (ImageView)findViewById(imgviewId);
-                imageView1.setImageDrawable(res.getDrawable(draId));
-                break;
-            case 16:
-                setContentView(R.layout.block_ore);
-                break;
-            case 17:
-                setContentView(R.layout.block_ore);
-                break;
-            case 18:
-                setContentView(R.layout.block_ore);
-                break;
-            case 19:
-                setContentView(R.layout.block_ore);
-                break;
-            case 20:
-                setContentView(R.layout.block_ore);
-                break;
-            case 21:
-                setContentView(R.layout.block_ore);
-                break;
-            case 22:
-                setContentView(R.layout.block_ore);
-                break;
-            case 23:
-                setContentView(R.layout.block_stainedglass);
-                break;
-            case 24:
-                setContentView(R.layout.block_slimeblock);
+                imageView1 = (ImageView)findViewById(imgviewId1);
+                imageView1.setImageDrawable(res.getDrawable(draId1));
                 break;
             case 25:
-                setContentView(R.layout.block_granite);
-                break;
-            case 26:
-                setContentView(R.layout.block_andesite);
-                break;
-            case 27:
-                setContentView(R.layout.block_diorite);
-                break;
-            case 28:
-                setContentView(R.layout.block_polishedgranite);
-                break;
-            case 29:
-                setContentView(R.layout.block_polishedandesite);
-                break;
             case 30:
-                setContentView(R.layout.block_polisheddiorite);
-                break;
-            case 31:
-                setContentView(R.layout.block_mossstone);
-                break;
+                setContentView(R.layout.base_bed);
+                textView = (TextView)findViewById(viewId);
+                textView.setText(res.getString(strId));
+                imageView1 = (ImageView)findViewById(imgviewId1);
+                imageView1.setImageDrawable(res.getDrawable(draId1));
+                ImageView imageView2 = (ImageView)findViewById(imgviewId2);
+                imageView2.setImageDrawable(res.getDrawable(draId2));
+            break;
             case 32:
-                setContentView(R.layout.block_coarsedirt);
-                break;
-            case 33:
-                setContentView(R.layout.block_prismarine);
-                break;
-            case 34:
-                setContentView(R.layout.block_prismarinebricks);
-                break;
-            case 35:
-                setContentView(R.layout.block_darkprismarine);
-                break;
-            case 36:
-                setContentView(R.layout.base_chest);
+                setContentView(R.layout.base_bed);
+                imageView = (ImageView) findViewById(R.id.gif1);
+                GlideDrawableImageViewTarget target1 = new GlideDrawableImageViewTarget(imageView);
+                Glide.with(this).load(draId1).into(target1);
+                textView = (TextView)findViewById(viewId);
+                textView.setText(res.getString(strId));
+                imageView1 = (ImageView)findViewById(imgviewId1);
+                imageView1.setImageDrawable(res.getDrawable(draId1));
+                imageView2 = (ImageView)findViewById(imgviewId2);
+                imageView2.setImageDrawable(res.getDrawable(draId2));
                 break;
         }
     }

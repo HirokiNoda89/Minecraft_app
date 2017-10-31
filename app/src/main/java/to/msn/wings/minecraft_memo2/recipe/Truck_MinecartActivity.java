@@ -44,7 +44,6 @@ public class Truck_MinecartActivity extends Activity {
             case 7:
             case 8:
             case 9:
-                setContentView(R.layout.base_wood);
                 TextView textView = (TextView)findViewById(viewId);
                 textView.setText(res.getString(strId));
                 ImageView imageView = (ImageView)findViewById(imgviewId);

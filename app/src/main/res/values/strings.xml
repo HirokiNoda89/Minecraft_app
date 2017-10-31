@@ -81,7 +81,7 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
         グロウストーンを壊すと、1～4個のグロウストーンダストが手に入る。そのまま入手するにはシルクタッチ付きのツールで破壊する必要がある。</string>
     <drawable name="blockItem">@drawable/grow</drawable>
 
-    <string name="block2">糸：4 \\n 絵や旗などの装飾具の素材、または建材として使用できる。 主に羊から入手できるが、 クモから採れる糸を4つ紡ぎ合わせて作製することも可能。 火をつけたり、近くに火気や溶岩等の熱源があると延焼する。</string>
+    <string name="block2">糸：4 \\n絵や旗などの装飾具の素材、または建材として使用できる。 主に羊から入手できるが、 クモから採れる糸を4つ紡ぎ合わせて作製することも可能。 火をつけたり、近くに火気や溶岩等の熱源があると延焼する。</string>
     <string name="block3">羊毛：1　染料：1　(※配置不問) \\n 建材として使用できる。染料については、ページ下の方を参照のこと。 火をつけたり、近くに火気や溶岩等の熱源があると色如何にかかわらず延焼する。</string>
     <string name="block4">火薬：5　砂/赤砂：4 \\n 火打ち石と打ち金による着火、RS回路による信号で点火し、爆発させることができる。この爆発はクリーパーのものよりも強力で、洞窟開拓や整地といった場面で重宝する。ワンクリックですぐ回収できる上に引力による落下もしないので、建築の足場に便利という一面もある。 火薬はクリーパー、ガストから入手可能。 火炎の矢を当てたり近くに火気がある場合、引火して爆発する。また、別の爆発物の爆風の届く範囲に置くと誘爆する性質を持つので、取り扱いには注意すること。</string>
     <string name="block5">木材/丸石/砂岩/石/石レンガ/レンガ/ネザーレンガブロック/ネザー水晶ブロック/赤砂岩/プルプァブロック：3  通常のブロックの半分の高さのブロック。 見た目は元のブロックを半分にしたものだが、例外的に石ハーフブロックは固有のテクスチャーに変化する。 砂岩と石レンガは模様入り等の亜種からや、原種亜種混合でも作れるが、 完成したブロックの見た目は通常の砂岩、通常の石レンガに準拠する。 ただし、木材で作る場合は木の種類ごとに色の区別があるため、素材を一種類に統一しなくてはならない。 木のハーフブロックは火をつけたり、近くに火気や溶岩等の熱源があると延焼する。  ハーフブロックにすると数が元の倍になるため、長い足場づくりをする際に有用。 また、下付きハーフブロックの上には敵がスポーンしない。</string>
@@ -190,4 +190,256 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
     <string name="food7">牛乳：3　砂糖：2　卵：1　小麦：3  持った状態で右クリックすると地面に設置。 その状態でさらに右クリックすると満腹度を1回復。 6回まで食べられる。 牛乳は中身だけ消費し、空のバケツが作業台に残る。 腹持ち0.2x6 ※一度設置するとアイテム化しないため回収不可。 どうしても撤去したい場合は6回使い、食べきった方が良い。</string>
     <string name="food8">焼き兎肉：1　ニンジン：1　ベークドポテト：1　キノコ：1　ボウル：1  満腹度を5回復する。 キノコシチューと同じくスタック出来ない。 食べるとボウルのみが残る。 瞬間満腹度は最高峰だが、隠し満腹度は焼肉類よりやや劣る。</string>
     <string name="food9">ビートルート：6　ボウル：1  ver1.9より追加(PE版からの逆移植) 満腹度を3回復する。 キノコシチューと同じくスタック出来ない。 食べるとボウルのみが残る。</string>
+    <string name="tool0">棒：2　木材/丸石/鉄インゴット/金インゴット/ダイヤモンド：3\n
+        木に関するブロックを素手より早く壊せる。 剣に続いて攻撃力が高いので、武器がない場合の代用も可能。</string>
+    <drawable name="toolItem0">@drawable/axe</drawable>
+
+    <string name="tool1">棒：2　木材/丸石/鉄インゴット/金インゴット/ダイヤモンド：3\n
+        石や金属に関するブロックと鉱石を素手より早く壊すことができ、回収ができる。 破壊にツルハシを必要とするブロックの一部は、適切なツルハシを使わないと高速で破壊できず、アイテムもドロップしない。 例：丸石＝全てのツルハシが対応　　鉄鉱石＝石以上のツルハシが対応(木のツルハシでは無効)など。</string>
+    <drawable name="toolItem1">@drawable/pickaxe</drawable>
+
+    <string name="tool2">棒：2　木材/丸石/鉄インゴット/金インゴット/ダイヤモンド：1\n
+        土や砂などの柔らかいブロックを素手より早く掘れる。整地に便利 積もっている雪に使うと雪玉を入手できる。 ver1.9 から、土に右クリックをすることで耐久値を消費して「小道ブロック」にできるようになった。このブロックはシルクタッチでも回収できず、壊すと土ブロックが手に入る。</string>
+    <drawable name="toolItem2">@drawable/shovel</drawable>
+
+    <string name="tool3">棒：1　木材/丸石/鉄インゴット/金インゴット/ダイヤモンド：2\n
+        手や他のツールよりも攻撃力が高い戦闘向けの武器。 攻撃力はダイヤ＞鉄＞石＞木＝金　の順だが、耐久力は金の剣が一番低い。 鉄の剣は、まれにゾンビが持っており、そこから入手可能。金の剣はゾンビピッグマン、石の剣はウィザースケルトンから入手できる。 ver1.6.1から クリエイティブでは物を壊す事が出来なくなった。 ver1.9 からガードができなくなった。</string>
+    <drawable name="toolItem3">@drawable/sword</drawable>
+
+    <string name="tool4">棒：2　木材/丸石/鉄インゴット/金インゴット/ダイヤモンド：2\n
+        種を植えることが出来るように土を耕すことができる。これに関しては素材のグレードによる差が耐久性以外に無いので、よほど大規模でもない限りはわざわざ金やダイヤモンドを使ってまでこれを作ることはないだろう。</string>
+    <drawable name="toolItem4">@drawable/hoe</drawable>
+
+    <string name="tool5">棒：3　糸：3\n
+        遠距離攻撃が出来るようになる。ただし使うには矢を必要とする。 クモからとれる糸を使って作るのが一般的だが、まれにスケルトンからもドロップする。後者はエンチャント付きのも含まれる可能性がある反面、耐久ゲージは減っている。</string>
+    <drawable name="toolItem5">@drawable/bow</drawable>
+
+    <string name="tool6">火打石：1　棒：1　羽：1\n
+        弓専用の矢。 矢はスケルトンのドロップからも入手できる。また、素材である羽(Feathers)は鶏を倒すことで手に入れられる。 ver1.9からはオフハンドに持った矢が優先的に使用される。</string>
+    <drawable name="toolItem6">@drawable/arrow</drawable>
+
+    <string name="tool7">グロウストーンダスト：4　矢：1\n
+        ver1.9で追加された。矢の周りをグロウストーンダスト4つで囲んでクラフトする。当たったmobは一定時間発光し、障害物を挟んでも見えるようになる。</string>
+    <drawable name="toolItem7">@drawable/spectral_arrow</drawable>
+
+    <string name="tool8">各種残留ポーション：1　矢：8\n
+        ver1.9で追加されたポーションの効果がついた矢。残留ポーションの周りを矢８本で囲んでクラフトする。 当たったMobはその効果を受ける。 鈍化の矢はスケルトンの亜種のStrayからも入手できる。</string>
+    <drawable name="toolItem8">@drawable/tipped_arrow</drawable>
+
+    <string name="tool9">鉄インゴット：1　火打石：1\n　
+        (※ver1.7.2以降は配置不問)  指定した場所に火をおこせる。火事にならないよう注意。 他、ネザーへの出入り口となるネザーポータルを開いたり、TNT爆弾などに着火するのに必要。</string>
+    <drawable name="toolItem9">@drawable/flint_and_steel</drawable>
+
+    <string name="tool10">鉄インゴット：3\n
+        水、溶岩、牛乳を運ぶ（ミルクのみ飲む）のに用いられる。空の状態のバケツのみ、スタックが可能。</string>
+    <drawable name="toolItem10">@drawable/bucket</drawable>
+
+    <string name="tool11">鉄インゴット：4　レッドストーン：1\n
+        ワールド作成時のスタート位置(初期リスポーン地点)を指し示す。 ベッドを使ってリスポーン地点を変更しても、それとは無関係に常に初期位置を示し続ける。ネザー、エンドワールドにいる間は故障して使い物にならなくなってしまう。</string>
+    <drawable name="toolItem11">@drawable/compass</drawable>
+
+    <string name="tool12">金インゴット：4　レッドストーン：1\n
+        時間が分かるようになる。そのまま持ち物で確認する他に、額縁に入れて家の時計にするにもいい。ネザー、エンドワールドにいる間は故障して使い物にならなくなってしまう。</string>
+    <drawable name="toolItem12">@drawable/clock</drawable>
+
+    <string name="tool13">棒：3　糸：2\n
+        水辺に投げて、釣りができる。生魚を手に入れる手段である。 →釣り竿について ver1.7から 釣れる魚として、生鮭、フグ、クマノミが追加。 さらに魚が近づいてくるとき、水しぶきのエフェクトが近づいてくるようになり、浮きが沈むタイミングが分かりやすくなった。 ver1.10から アイテムも引き寄せられるようになった。</string>
+    <drawable name="toolItem13">@drawable/fishing_rod</drawable>
+
+    <string name="tool14">紙：8　コンパス：1\n
+        右クリックで使用すると周囲の地形が見られる「地図」になる。 ver1.4.1以前は直接地図が作成され、描画範囲も今とは異なっていた。</string>
+    <drawable name="toolItem14">@drawable/empty_map</drawable>
+
+    <string name="tool15">紙：8　地図：1\n
+        地図の周囲に紙を継ぎ足していくことで、より余白が大きく広範囲に及ぶ拡張地図を作れる。全5段階。</string>
+    <drawable name="toolItem15">@drawable/zoomed_out_map</drawable>
+
+    <string name="tool16">白紙の地図：1　地図：1　(※配置不問)\n
+        地図の内容を余白の埋め具合や拡張回数ごと複写したスペアが作成される。 このスペアは元の地図と内部データ的に完全に同一なのでスタックが可能で、 記入範囲も同期するためのバックアップなどとして機能する。</string>
+    <drawable name="toolItem16">@drawable/clone_map</drawable>
+
+    <string name="tool17">鉄インゴット：2\n
+        鉄をナナメに2つ配置してクラフトすることで入手できる。羊を傷つけずに羊毛を刈り取ったり、葉や草などを壊さずに収集するために使用する。ただし採集速度はマッハなので、油断していると耐久力もごっそり持っていかれるのはザラ。 また、クモの巣や羊毛ブロックを素早く回収することができる。</string>
+    <drawable name="toolItem17">@drawable/shears</drawable>
+
+    <string name="tool18">ブレイズパウダー：1　石炭/木炭：1　火薬：1　(※配置不問)\n
+        使用すると｢火打石と打ち金｣のようにブロックに火を点けることができるが、こちらは使い切り。 ディスペンサーで発射すると、着弾地点のブロックやモンスター、生き物に点火する。 着弾地点に空間があれば、水、溶岩を突っ切って火を点けることができる。</string>
+    <drawable name="toolItem18">@drawable/fire_charge</drawable>
+
+    <string name="tool19">本：1　羽：1　イカスミ：1\n　(※配置不問)\n
+        本の複数ページに渡って自由に文字を書き込める。 サインをする事で1冊の本として完成させる事が出来るが、サインすると以降の再編集は出来なくなる。 サインされた本はエンチャント済みツールの様に輝き、アイテム名には｢(サイン名)によって (ユーザー名)｣と表示される。</string>
+    <drawable name="toolItem19">@drawable/book_and_quill</drawable>
+
+    <string name="tool20">著書：1　本と羽ペン：1～8 (※配置不問)\n
+        著書（サインされた本）をコピーする。 オリジナルの著書とは異なりスタックが可能。 アイテム欄での正式名称は表示されないが、一般的に「著書」と呼ばれている。ただし内部的には「記入済みの本」となっている。</string>
+    <drawable name="toolItem20">@drawable/writtenbook</drawable>
+
+    <string name="tool21">釣り竿：1　ニンジン：1　(※耐久値が減った釣り竿では作成できない)\n
+        釣り竿の斜め下にニンジンを配置すると作成できる。 手に持っていると豚を誘導することができ、 サドル付きの豚に乗った状態だと豚の舵取り(コントロール)ができる。 ただ、豚のスピードが遅いうえ耐久値の減りが速いので、移動手段としては不向き。 エンチャント付きの釣り竿でも作成できるが、エンチャントの効果がニンジン付き釣り竿に引き継がれることはない。</string>
+    <drawable name="toolItem21">@drawable/carrot_on_a_stick</drawable>
+
+    <string name="tool22">糸：4　スライムボール：1\n
+        ver1.6 から追加 動物に対して使うことで、引っ張って連れて歩いたり、フェンスに繋ぎ留めておくことができる。自分から切るか距離を離しすぎない限りは繋いでいられる。ヤマネコを野生の状態のまま捕まえるには最適だが、捕まえるにはヤマネコの素早さを捉えられる必要がある。　切った場合縄が外れ、その動物の足元にドロップされる。</string>
+    <drawable name="toolItem22">@drawable/lead</drawable>
+
+    <string name="armor0">革/鉄インゴット/金インゴット/ダイヤモンド：5\n
+        0.5～1.5アーマーポイントを得る。</string>
+    <drawable name="armorItem0">@drawable/helmets</drawable>
+
+    <string name="armor1">革/鉄インゴット/金インゴット/ダイヤモンド：8\n
+        1.5～4アーマーポイントを得る。</string>
+    <drawable name="armorItem1">@drawable/chestplates</drawable>
+
+    <string name="armor2">革/鉄インゴット/金インゴット/ダイヤモンド：7\n
+        1～3アーマーポイントを得る。</string>
+    <drawable name="armorItem2">@drawable/leggings</drawable>
+
+    <string name="armor3">革/鉄インゴット/金インゴット/ダイヤモンド：4\n
+        0.5～1.5アーマーポイントを得る。</string>
+    <drawable name="armorItem3">@drawable/boots</drawable>
+
+    <string name="armor4">鉄インゴット：1　木材：6
+        ver1.9にて追加。 右クリックで構える。 耐久値がなくなると壊れる。構えているときは移動速度が極端に遅くなる。 また、他プレイヤーやゾンビ等の直接攻撃はガードした時にノックバックする。矢も短距離だが跳ね返すことができ、その矢に当たったMOBはダメージを受ける。 後ろからの攻撃は防げないので注意。構えているときは攻撃できない。 また、バナーとクラフトすることで盾にバナーの模様をつけることができる。 ver1.11から 攻撃をガードした時、その攻撃により発生するダメージを100％カットするようになった。 ver1.10までのダメージカット率は66％。</string>
+    <drawable name="armorItem4">@drawable/shield</drawable>
+
+    <string name="vehicle0">鉄インゴット：5\n
+        プレイヤーを乗せて線路の上を走る。</string>
+    <drawable name="vehicleItem0">@drawable/minecart</drawable>
+
+    <string name="vehicle1">かまど：1　トロッコ：1\n
+        他のトロッコを線路に沿って押すことができる。 燃料をかまどトロッコにやると動き出す(前にトロッコ置いて後ろに動力すれば自動で出来る) 壊すとトロッコとかまどに分かれる。</string>
+    <drawable name="vehicleItem1">@drawable/minecart_with_furnace</drawable>
+
+    <string name="vehicle2">チェスト：1　トロッコ：1\n
+        線路に沿って、アイテムを輸送できる。 壊すとトロッコとチェストに分かれる。</string>
+    <drawable name="vehicleItem2">@drawable/minecart_with_chest</drawable>
+
+    <string name="vehicle3">ホッパー：1　トロッコ：1\n
+        線路上のアイテムを回収したり ホッパーやチェスト等のブロックからアイテムを移動させる事ができる。 アクティベーターレールにより回収機能のON/OFFを切り替えられる。</string>
+    <drawable name="vehicleItem3">@drawable/minecart_with_hopper</drawable>
+
+    <string name="vehicle4">TNT：1　トロッコ：1\n
+        ON状態のアクティベーターレールの上を通ると起爆する。</string>
+    <drawable name="vehicleItem4">@drawable/minecart_with_tnt</drawable>
+
+    <string name="vehicle5">鉄インゴット：6　棒：1\n
+        トロッコを走らせるためのいわゆる線路。真横に置くと曲がり、1ブロック高いところに置くと坂になる。</string>
+    <drawable name="vehicleItem5">@drawable/rail</drawable>
+
+    <string name="vehicle6">金インゴット：6　棒：1　レッドストーン：1\n
+        トロッコを走らせるのに使う場合がある。 レッドストーン動力が入力されるとトロッコを加速、入力されないと減速する。 レールと違い曲がらないので直線だけ有効。</string>
+    <drawable name="vehicleItem6">@drawable/powered_rail</drawable>
+
+    <string name="vehicle7">鉄インゴット：6　感圧式スイッチ(石)：1　レッドストーン：1\n
+        トロッコを走らせるのに使う場合がある。 トロッコ専用の感知板として機能する。 レールと違い曲がらないので直線だけ有効。</string>
+    <drawable name="vehicleItem7">@drawable/detector_rail</drawable>
+
+    <string name="vehicle8">鉄インゴット：6　棒：2　レッドストーントーチ：1\n
+        このレールを通ったTNT付きトロッコとホッパー付きトロッコを 作動、起爆させたりする為に用いるレール。 このレールでは加速減速しない。 動力ONになっているアクティベーターレール上をMobを載せたトロッコが通過するとMobを下ろすことが出来る。</string>
+    <drawable name="vehicleItem8">@drawable/activator_rail</drawable>
+
+    <string name="vehicle9">木材：5\n
+        水上を、泳ぐよりも速く移動できる。 トロッコのように複数回殴るとそのままアイテム化して回収できる。 ver1.6.x はWキーとマウスのみでA･S･Dキーで曲がったり後ろにバックすることが出来なくなった　 ver1.7.2 から1.5.2以前と同様の操作方法に戻った　 ver1.9 から障害物にぶつかっても壊れなくなった。既存のボートはオークのボートとなり、５種類の木材のボートが作成できるようになった。  Pocket Edition, Console Editionでは木材の他に、木のシャベルが材料として必要。</string>
+    <drawable name="vehicleItem9">@drawable/boat</drawable>
+
+    <string name="machine0">木材：6\n
+        一般的なドア。右クリックのほかに、RS動力を受けることでも開閉する。 開いた状態でも当たり判定があり、このままでも水流を遮断する特性を持つ。 難易度がハードだと、ゾンビ、ゾンビ　ピッグマンはドアを通ろうとする際、扉を壊してしまう。 Ver1.4.1以前では、 殴っても開閉できた。 ver1.8から、スタック可能となり、クラフトで得る個数が3つになった。 クラフトに使用した木材によって5種類の専用のテクスチャが使用されるようになった。 異なる種類の木材では作成不可となった。  追加のアイテムのアイコンが新しく変更された。</string>
+    <drawable name="machineItem0">@drawable/wooden_door</drawable>
+
+    <string name="machine1">鉄インゴット：6\n
+        遺跡で見かけられる。木のドアと異なり右クリックで開閉出来ず、レッドストーン動力でしか開閉しない。 ver1.8から、スタック可能となり、クラフトで得られる個数が3つになった。 またアイテムのアイコンが新しく変更された。 なお、村人はこの扉を開けられず、またゾンビはこのドアを壊すことができないので、村人を守るために使うこともできる。</string>
+    <drawable name="machineItem1">@drawable/iron_door</drawable>
+
+    <string name="machine2">木材：6\n
+        木のドアに似ているが、上下方向に開閉する。 レッドストーン回路でも開閉が可能。 通称ハッチ。開いていてもMobは床と勘違いするため、落下させることが可能。</string>
+    <drawable name="machineItem2">@drawable/wooden_trapdoor</drawable>
+
+    <string name="machine3">鉄インゴット：4\n
+        レッドストーン信号で開閉する。 木のそれと大差はない。</string>
+    <drawable name="machineItem3">@drawable/iron_trapdoor</drawable>
+
+    <string name="machine4">棒：4 木材：2\n
+        右クリックで開閉するフェンス。足場としての高さは1.5ブロック相当の特殊な判定を持っている。 レッドストーン回路の動力でも開閉する。 ver1.8から、レシピその物に変化はないが、既存のフェンスゲートはオークのフェンスゲートとなり、 それぞれの素材のフェンスが5種類追加された。 異なる種類の木材では作成不可となった。  可燃性となった</string>
+    <drawable name="machineItem4">@drawable/fence_gate</drawable>
+
+    <string name="machine5">木材/石：2\n
+        生物が上に乗ることでレッドストーン信号を出力する。 木の感圧式スイッチは物を落としただけでも作動する。 火が付かないので焼失することはない。</string>
+    <drawable name="machineItem5">@drawable/pressure_plate</drawable>
+
+    <string name="machine6">鉄インゴット/金インゴット：2\n
+        通常の感圧式スイッチと異なり生物が乗っても反応しないが ドロップしているアイテムが乗っている量により 出力される強さが決まる。 金より鉄の感圧板の方がより沢山のアイテムを必要とする。</string>
+    <drawable name="machineItem6">@drawable/weighted_pressure_plate</drawable>
+
+    <string name="machine7">木材/石：1\n
+        押すことで、木のボタンは1.5秒、石のボタンは１秒の間レッドストーン信号を出力する。 木のボタンは矢が当たっても反応して動作する。 火が付かないので焼失することはない。</string>
+    <drawable name="machineItem7">@drawable/button</drawable>
+
+    <string name="machine8">棒：1　丸石：1\n
+        右クリックでONにすることで、レッドストーン信号を出力する。</string>
+    <drawable name="machineItem8">@drawable/lever</drawable>
+
+    <string name="machine9">レッドストーン：1　棒：1\n
+        レッドストーン信号を出力し続ける。 ブロックに立てている際、そのブロックに信号が入ると、OFFになる。</string>
+    <drawable name="machineItem9">@drawable/redstone_torch</drawable>
+
+    <string name="machine10">レッドストーン：1　レッドストーントーチ：2　石：3\n
+        ワイヤーだけでは15ブロック以内しか届かないレッドストーンの動力を延長(リピート)したり、 動力の伝播を指定間隔で遅延(ディレイ)させたりできる。(指定間隔4段階(0.1秒 0.2秒 0.3秒 0.4秒)) またダイオードのように極性があり、一方向にのみ動力を伝える。 ブロックとしての高さは0.125で若干厚みがある。半ブロックや日照センサーより薄い。</string>
+    <drawable name="machineItem10">@drawable/redstone_repeater</drawable>
+
+    <string name="machine11">レッドストーントーチ：3　ネザー水晶：1　石：3\n
+        後ろと横からのレッドストーン信号を受ける。 通常時：比較モード　右クリック時：減算モード 比較の場合、横からの信号が後ろより強い場合は信号を一切出力しなくなる。逆の場合はそのままの強さで出力される。 減算の場合、後ろからの信号から 横からの信号の強さを引いた強さで出力される。 0、またはマイナスになる場合は出力しない。 ブロックとしての高さは0.125で若干厚みがある。半ブロックや日照センサーより薄い ver1.6 から水入り大釜やエンダーアイ付きエンドポータルフレームなどに信号を受けるようになった(大釜は最大3信号を与える) ver1.8 額縁から信号を受けるようになった（最大8？)。</string>
+    <drawable name="machineItem11">@drawable/redstone_comparator</drawable>
+
+    <string name="machine12">木材：8　ダイヤモンド：1\n
+        レコードを使うと音楽が流れる。 レコードはクリーパーがスケルトンの矢で倒された際にドロップするか、ダンジョンの宝箱から手に入る。 なお、BGMをオフにしていてもジュークボックスの音楽は流れる。 ver1.9 から、Escキーの設定欄からジュークボックスの音量も操作できるようになった。</string>
+    <drawable name="machineItem12">@drawable/jukebox</drawable>
+
+    <string name="machine13">木材：8　レッドストーン：1\n
+        右クリックで音階調節、左クリックで音を鳴らす。 レッドストーン信号で音を鳴らすことも出来る。 どのブロックの上に置くかで音色が変わる</string>
+    <drawable name="machineItem13">@drawable/note_block</drawable>
+
+    <string name="machine14">丸石：7　レッドストーン：1\n
+        9マスのインベントリを持つ。 レッドストーン信号を入力すると 中に入っているアイテムを一つその場に落とす。 また、ドロッパー同士やチェストに繋げば 入力があると繋いだ先にアイテムを収納する。</string>
+    <drawable name="machineItem14">@drawable/dropper</drawable>
+
+    <string name="machine15">丸石：7　弓：1　レッドストーン：1　(※耐久値が減った弓では作成できない)\n
+        9マスのインベントリを持つ。 レッドストーン回路で信号を入れると中に入っている物を射出する。 農作物への骨粉使用やプレイヤーへの防具装着などの使い方もある。</string>
+    <drawable name="machineItem15">@drawable/dispenser</drawable>
+
+    <string name="machine16">木材：3　丸石：4　鉄インゴット：1　レッドストーン：1\n
+        動力が送られるとピストンの向いてる方向に1マス押し出す。動力が切れると元に戻る。 押し出す方向にブロックがある場合、そのブロックを押し出す。一度に押し出せるブロックの数は12個まで。</string>
+    <drawable name="machineItem16">@drawable/piston</drawable>
+
+    <string name="machine17">スライムボール：1　ピストン：1\n
+        基本的にピストンと同じ。 動力が切れると元に戻ると同時に押し出した先のブロック1つも引き戻す。 上向き以外の時、空中の砂や砂利は引き戻せないが、上向きの場合は落下せず引き戻すことができる。</string>
+    <drawable name="machineItem17">@drawable/sticky_piston</drawable>
+
+    <string name="machine18">レッドストーン：4　グロウストーン：1\n
+        レッドストーンなどで動力を送ると15レベルの強いを光を放つ。 反対に､動力が遮断されると明かりは消える。 レッドストーントーチや松明を置いたり刺したりすることもできる。</string>
+    <drawable name="machineItem18">@drawable/redstone_lamp</drawable>
+
+    <string name="machine19">鉄インゴット：1　棒：1　木材：1\n
+        当該線上を接触感知する事で動力を送る装置。 トリップワイヤーフックを対面する壁に設置し、間を糸で接続する事で機能する。 糸はレッドストーンワイヤーの要領で接続するが空中にも設置可能。 途中で曲げると機能しなくなるが、2つの糸を交差させる事は可能 動力はトリップワイヤーフック本体のみから送信され、糸からは送信されない。</string>
+    <drawable name="machineItem19">@drawable/tripwire_hook</drawable>
+
+    <string name="machine20">トリップワイヤーフック：1　チェスト：1\n
+        チェストを開くと真下へ動力を送る。 信号の強さは開ける人数で決まる。 通常のチェストの隣にも設置することが出来る。 通常のチェストと同じようにラージトラップチェストにする事も可能。</string>
+    <drawable name="machineItem20">@drawable/trapped_chest</drawable>
+
+    <string name="machine21">鉄：5　チェスト：1\n
+        ホッパーが接続されたインベントリを持つブロック （チェスト、ホッパー、チェストトロッコ、ディスペンサー ドロッパー、トラップチェスト、かまど、醸造台） に毎秒2.5個の速度でアイテムを移動させる。</string>
+    <drawable name="machineItem21">@drawable/hopper</drawable>
+
+    <string name="machine22">レッドストーン：9\n
+        レッドストーントーチと同じく強度15の信号を出力する。 また、レッドストーントーチとは異なり、ブロック扱いなので、天井に設置したり、ピストンで押す事が出来る。</string>
+    <drawable name="machineItem22">@drawable/block_of_redstone</drawable>
+
+    <string name="machine23">ガラス：3　ネザー水晶：3　木材ハーフブロック：3\n
+        日光の強さに応じた信号を出力する。 明るい程強い信号を出し暗くなるにつれて弱まっていく。 高さ0.375で、半ブロックより薄く、リピーターやコンパレーターより厚いブロック ver1.8から右クリックで反転モードに切り替わるようになった。 反転モードでは暗いほど強い信号を出力する。</string>
+    <drawable name="machineItem23">@drawable/daylight_sensor</drawable>
+
+    <string name="machine24">丸石：6　レッドストーン：2　ネザー水晶：1\n
+        顔の模様が付いた面に接する1ブロックを監視する。 監視しているブロックに変化(更新)があると、後部から信号を発する。</string>
+    <drawable name="machineItem24">@drawable/observer</drawable>
+
 </resources>

@@ -39,31 +39,13 @@ public class BaseActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        intent.putExtra("key",0);
-                        startActivity(intent);
-                        break;
                     case 1:
-                        intent.putExtra("key",1);
-                        startActivity(intent);
-                        break;
                     case 2:
-                        intent.putExtra("key",2);
-                        startActivity(intent);
-                        break;
                     case 3:
-                        intent.putExtra("key",3);
-                        startActivity(intent);
-                        break;
                     case 4:
-                        intent.putExtra("key",4);
-                        startActivity(intent);
-                        break;
                     case 5:
-                        intent.putExtra("key",5);
-                        startActivity(intent);
-                        break;
                     case 6:
-                        intent.putExtra("key",6);
+                        intent.putExtra("key",position);
                         startActivity(intent);
                         break;
                 }

@@ -51,7 +51,6 @@ public class Armor_HelmetsActivity extends Activity {
                 imageView1.setImageDrawable(res.getDrawable(draId));
                 break;
             case 4:
-                setContentView(R.layout.base_wood);
                 textView = (TextView)findViewById(viewId);
                 textView.setText(res.getString(strId));
                 imageView1 = (ImageView)findViewById(imgviewId);

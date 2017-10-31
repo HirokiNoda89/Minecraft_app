@@ -72,7 +72,6 @@ public class Machine_Wooden_doorActivity extends Activity{
             case 22:
             case 23:
             case 24:
-                setContentView(R.layout.base_wood);
                 textView = (TextView)findViewById(viewId);
                 textView.setText(res.getString(strId));
                 imageView1 = (ImageView)findViewById(imgviewId);

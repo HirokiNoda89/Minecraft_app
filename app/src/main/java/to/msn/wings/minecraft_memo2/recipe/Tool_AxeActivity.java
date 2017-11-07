@@ -69,11 +69,11 @@ public class Tool_AxeActivity extends Activity {
             case 19:
             case 21:
             case 22:
+                setContentView(R.layout.base_wood);
                 textView = (TextView)findViewById(viewId);
                 textView.setText(res.getString(strId));
                 imageView1 = (ImageView)findViewById(imgviewId);
                 imageView1.setImageDrawable(res.getDrawable(draId));    //その他画像
-                setContentView(R.layout.base_wood);
                 break;
         }
     }

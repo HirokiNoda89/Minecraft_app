@@ -42,6 +42,7 @@ public class Block_OreActivity extends Activity {
             case 15:
             case 20:
             case 22:
+            case 23:
             case 43:
                 setContentView(R.layout.base_wood);
                 ImageView imageView = (ImageView) findViewById(R.id.gif1);
@@ -67,7 +68,6 @@ public class Block_OreActivity extends Activity {
             case 18:
             case 19:
             case 21:
-            case 23:
             case 24:
             case 25:
             case 26:

@@ -101,9 +101,13 @@ public class Other_EnchantmentTable_Activity extends Activity {
             break;
             case 32:
                 setContentView(R.layout.base_bed);
+
                 imageView = (ImageView) findViewById(R.id.gif1);
                 GlideDrawableImageViewTarget target1 = new GlideDrawableImageViewTarget(imageView);
                 Glide.with(this).load(draId1).into(target1);
+                ImageView imageView4 = (ImageView) findViewById(R.id.gif2);
+                GlideDrawableImageViewTarget target2 = new GlideDrawableImageViewTarget(imageView4);
+                Glide.with(this).load(draId2).into(target2);
                 textView = (TextView)findViewById(viewId);
                 textView.setText(res.getString(strId));
                 imageView1 = (ImageView)findViewById(imgviewId1);

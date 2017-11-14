@@ -34,6 +34,7 @@ public class Base_WoodActivity extends Activity {
 
         switch (key){
             case 0:
+            case 2:
             case 6:
                 setContentView(R.layout.base_wood);
                 ImageView imageView = (ImageView) findViewById(R.id.gif1);
@@ -45,7 +46,6 @@ public class Base_WoodActivity extends Activity {
                 imageView1.setImageDrawable(res.getDrawable(draId));
                 break;
             case 1:
-            case 2:
             case 3:
             case 4:
             case 5:

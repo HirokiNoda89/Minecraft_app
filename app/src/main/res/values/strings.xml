@@ -22,8 +22,8 @@ ver1.9から 砂漠、メサ、メガタイガなどにある枯れ木を壊し�
 設置すると14レベルの光を放つ。そのため、近くの雪と氷を溶かす。
 周囲の可燃物に引火することはない。</string>
     <drawable name="baseItem2">@drawable/torch</drawable>
-
     <string name="base3">木材：4 \n
+
 3×3の製作グリッドを使うために必要。</string>
     <drawable name="baseItem3">@drawable/craftingtable</drawable>
 
@@ -74,16 +74,16 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
     <drawable name="blockItem2">@drawable/wool</drawable>
 
     <string name="block3">羊毛：1　染料：1　(※配置不問) \n 建材として使用できる。染料については、ページ下の方を参照のこと。 火をつけたり、近くに火気や溶岩等の熱源があると色如何にかかわらず延焼する。</string>
-    <drawable name="bloclItem3">@drawable/coloredwool_iloveimg_resized</drawable>
+    <drawable name="blockItem3">@drawable/coloredwool_iloveimg_resized</drawable>
 
     <string name="block4">火薬：5　砂/赤砂：4 \n 火打ち石と打ち金による着火、RS回路による信号で点火し、爆発させることができる。この爆発はクリーパーのものよりも強力で、洞窟開拓や整地といった場面で重宝する。ワンクリックですぐ回収できる上に引力による落下もしないので、建築の足場に便利という一面もある。 火薬はクリーパー、ガストから入手可能。 火炎の矢を当てたり近くに火気がある場合、引火して爆発する。また、別の爆発物の爆風の届く範囲に置くと誘爆する性質を持つので、取り扱いには注意すること。</string>
     <drawable name="blockItem4">@drawable/tnt</drawable>
 
-    <string name="block5">木材/丸石/砂岩/石/石レンガ/レンガ/ネザーレンガブロック/ネザー水晶ブロック/赤砂岩/プルプァブロック：3 \n 通常のブロックの半分の高さのブロック。 見た目は元のブロックを半分にしたものだが、例外的に石ハーフブロックは固有のテクスチャーに変化する。 砂岩と石レンガは模様入り等の亜種からや、原種亜種混合でも作れるが、 完成したブロックの見た目は通常の砂岩、通常の石レンガに準拠する。 ただし、木材で作る場合は木の種類ごとに色の区別があるため、素材を一種類に統一しなくてはならない。 木のハーフブロックは火をつけたり、近くに火気や溶岩等の熱源があると延焼する。  ハーフブロックにすると数が元の倍になるため、長い足場づくりをする際に有用。 また、下付きハーフブロックの上には敵がスポーンしない。</string>
-    <drawable name="blockItem5">@drawable/slabs_iloveimg_resized</drawable>
+    <string name="block5">木材/丸石/砂岩/石/石レンガ/レンガ/ネザーレンガブロック/ネザー水晶ブロック/赤砂岩/プルプァブロック：3 \n 通常のブロックの半分の高さのブロック。見た目は元のブロックを半分にしたものだが、例外的に石ハーフブロックは固有のテクスチャーに変化する。砂岩と石レンガは模様入り等の亜種からや、原種亜種混合でも作れるが、完成したブロックの見た目は通常の砂岩、通常の石レンガに準拠する。ただし、木材で作る場合は木の種類ごとに色の区別があるため、素材を一種類に統一しなくてはならない。木のハーフブロックは火をつけたり、近くに火気や溶岩等の熱源があると延焼する。ハーフブロックにすると数が元の倍になるため、長い足場づくりをする際に有用。また、下付きハーフブロックの上には敵がスポーンしない。</string>
+    <drawable name="blockItem5">@drawable/slabs</drawable>
 
     <string name="block6">木材/丸石/砂岩/石レンガ/ネザーレンガ/レンガブロック/ネザー水晶ブロック/赤砂岩/プルプァブロック：6 \n 通常のブロックと同じ高さの階段。これを足場にすることで、段差をジャンプすることなく移動できる。また、その形状から屋根の建材、イス等の家具にもなる。 砂岩と石レンガは模様入り等の亜種からや、原種亜種混合でも作れるが、 完成したブロックの見た目は通常の砂岩、通常の石レンガに準拠する。 ただし、木材で作る場合は木の種類ごとに色の区別があるため、素材を一種類に統一しなくてはならない。 木の階段は火をつけたり、近くに火気や溶岩等の熱源があると延焼する。</string>
-    <drawable name="blockItem6">@drawable/stairs_iloveimg_resized</drawable>
+    <drawable name="blockItem6">@drawable/stairs</drawable>
 
     <string name="block7">雪玉：4 \n 雪玉の保存や建材に利用できる。また、これを2段重ね、てっぺんにカボチャを載せることでスノーゴーレムを生成可能。 薄いものと違って、雪ブロックは松明で溶けない。</string>
     <drawable name="blockItem7">@drawable/snowblock</drawable>
@@ -134,7 +134,7 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
     <drawable name="blockItem22">@drawable/clay_block_iloveimg_resized</drawable>
 
     <string name="block23">ガラス：8　染料：1 \n ver1.7 から追加 やや半透明の色付きガラス。装飾として使用できる。</string>
-    <drawable name="blockItem23">@drawable/stained_glass_iloveimg_resized</drawable>
+    <drawable name="blockItem23">@drawable/stained_glass</drawable>
 
     <string name="block24">スライムボール：9 \n ver1.8 から追加 このブロックによるダメージはなく、高さによってバウンドする。 落ちてきた高さの８割の高さ、バウンドする。</string>
     <drawable name="blockItem24">@drawable/slime_block</drawable>
@@ -235,6 +235,9 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
     <string name="other12">木材：6　棒：1 \n 壁か床に置き、置く時に文章を入力できる。 日本語の入力はプラットフォームによってはできない。またチャット窓と異なりコピペは不可。 当たり判定はなく水や溶岩などの液体の流れを遮断する。</string>
     <drawable name="otherItem12">@drawable/sign</drawable>
 
+    <string name="other13">棒：7 \n壁面に貼り付けると昇り降りが出来るようになる。無操作中にスニークをするとその高さで留まる。水流を遮断する。スニーク中は物を破壊するスピードが遅くなる。</string>
+    <drawable name="otherItem13">@drawable/sign</drawable>
+
     <string name="other14">サトウキビ：3\n
 本や地図を作るのに必要。
 村人がエメラルドと交換してくれる。</string>
@@ -318,7 +321,7 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
 
     <string name="dye0">ポピー/ビートルート：1 \n 赤色の染料。レッド。</string>
     <drawable name="dyeItem0">@drawable/dye_rose_red</drawable>
-    <drawable name="dyeItem0_1">@drawable/betrut</drawable>
+    <drawable name="dyeItem0_1">@drawable/rose_red_2</drawable>
 
     <string name="dye1">黄色の染料：1　　赤色の染料：1 \n 橙色の染料。オレンジ。</string>
     <drawable name="dyeItem1">@drawable/dye_orange</drawable>
@@ -395,7 +398,8 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
     <string name="food6">カボチャ：1　砂糖：1　卵：1　(※配置不問) \n 満腹度を4回復する。 腹持ち2.4</string>
     <drawable name="foodItem6">@drawable/pumpkinpie</drawable>
 
-    <string name="food7">牛乳：3　砂糖：2　卵：1　小麦：3 \n 持った状態で右クリックすると地面に設置。 その状態でさらに右クリックすると満腹度を1回復。 6回まで食べられる。 牛乳は中身だけ消費し、空のバケツが作業台に残る。 腹持ち0.2x6 ※一度設置するとアイテム化しないため回収不可。 どうしても撤去したい場合は6回使い、食べきった方が良い。</string>
+    <string name="food7">牛乳：3　砂糖：2　卵：1　小麦：3 \n 持った状態で右クリックすると地面に設置。 その状態でさらに右クリックすると満腹度を1回復。 6回まで食べられる。 牛乳は中身だけ消費し、空のバケツが作業台に残る。 腹持ち0.2x6
+        \n※一度設置するとアイテム化しないため回収不可。 どうしても撤去したい場合は6回使い、食べきった方が良い。</string>
     <drawable name="foodItem7">@drawable/cake</drawable>
 
     <string name="food8">焼き兎肉：1　ニンジン：1　ベークドポテト：1　キノコ：1　ボウル：1 \n 満腹度を5回復する。 キノコシチューと同じくスタック出来ない。 食べるとボウルのみが残る。 瞬間満腹度は最高峰だが、隠し満腹度は焼肉類よりやや劣る。</string>

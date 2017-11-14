@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
+
 import to.msn.wings.minecraft_memo2.R;
 
 /**
@@ -43,12 +46,21 @@ public class Truck_MinecartActivity extends Activity {
             case 6:
             case 7:
             case 8:
-            case 9:
                 setContentView(R.layout.base_wood);
                 TextView textView = (TextView)findViewById(viewId);
                 textView.setText(res.getString(strId));
                 ImageView imageView = (ImageView)findViewById(imgviewId);
                 imageView.setImageDrawable(res.getDrawable(draId));
+
+            case 9:
+                setContentView(R.layout.base_wood);
+                imageView = (ImageView) findViewById(R.id.gif1);
+                GlideDrawableImageViewTarget target = new GlideDrawableImageViewTarget(imageView);
+                Glide.with(this).load(draId).into(target);
+                textView = (TextView)findViewById(viewId);
+                textView.setText(res.getString(strId));
+                ImageView imageView1 = (ImageView)findViewById(imgviewId);
+                imageView1.setImageDrawable(res.getDrawable(draId));    //gif画像
                 break;
         }
     }

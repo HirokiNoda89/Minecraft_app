@@ -20,6 +20,8 @@ public class Other_EnchantmentTable_Activity extends Activity {
 
     int viewId;
     int strId;
+    int viewId1;
+    int strId1;
     int draId1;
     int imgviewId1;
     int draId2;
@@ -34,6 +36,8 @@ public class Other_EnchantmentTable_Activity extends Activity {
         Resources res = getResources();
         strId = res.getIdentifier("other" + key,"string",getPackageName());
         viewId = res.getIdentifier("textView","id",getPackageName());
+        strId1 = res.getIdentifier("other" + key + "_" + 1 ,"string",getPackageName());
+        viewId1 = res.getIdentifier("textView1","id",getPackageName());
         draId1 = res.getIdentifier("otherItem" + key,"drawable",getPackageName());
         imgviewId1 = res.getIdentifier("gif1","id",getPackageName());
         draId2 = res.getIdentifier("otherItem" + key + "_" + 1,"drawable",getPackageName());
@@ -94,6 +98,8 @@ public class Other_EnchantmentTable_Activity extends Activity {
                 setContentView(R.layout.base_bed);
                 textView = (TextView)findViewById(viewId);
                 textView.setText(res.getString(strId));
+                TextView textView1 = (TextView) findViewById(viewId1);
+                textView1.setText(res.getString(strId1));
                 imageView1 = (ImageView)findViewById(imgviewId1);
                 imageView1.setImageDrawable(res.getDrawable(draId1));
                 ImageView imageView2 = (ImageView)findViewById(imgviewId2);
@@ -101,7 +107,6 @@ public class Other_EnchantmentTable_Activity extends Activity {
             break;
             case 32:
                 setContentView(R.layout.base_bed);
-
                 imageView = (ImageView) findViewById(R.id.gif1);
                 GlideDrawableImageViewTarget target1 = new GlideDrawableImageViewTarget(imageView);
                 Glide.with(this).load(draId1).into(target1);
@@ -110,6 +115,8 @@ public class Other_EnchantmentTable_Activity extends Activity {
                 Glide.with(this).load(draId2).into(target2);
                 textView = (TextView)findViewById(viewId);
                 textView.setText(res.getString(strId));
+                textView1 = (TextView) findViewById(viewId1);
+                textView1.setText(res.getString(strId1));
                 imageView1 = (ImageView)findViewById(imgviewId1);
                 imageView1.setImageDrawable(res.getDrawable(draId1));
                 imageView2 = (ImageView)findViewById(imgviewId2);

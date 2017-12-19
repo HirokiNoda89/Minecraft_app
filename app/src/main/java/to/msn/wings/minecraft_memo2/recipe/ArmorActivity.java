@@ -8,25 +8,25 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import to.msn.wings.minecraft_memo2.Globals;
 import to.msn.wings.minecraft_memo2.R;
-
-/**
- * Created by 4163104 on 2017/09/28.
- */
 
 public class ArmorActivity extends Activity {
 
     ListView listview;
-    String[] members = {"ヘルメット","チェストプレート","レギンス","ブーツ","盾"};
     Intent intent;
+    Globals globals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
 
-        intent = new Intent(ArmorActivity.this, Armor_HelmetsActivity.class);
+        globals = (Globals) this.getApplication();
+        globals.GlobalsInit();
+        String members[] = globals.armor_member;
 
+        intent = new Intent(ArmorActivity.this, Armor_HelmetsActivity.class);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.base);
         listview = (ListView) findViewById(R.id.listview);

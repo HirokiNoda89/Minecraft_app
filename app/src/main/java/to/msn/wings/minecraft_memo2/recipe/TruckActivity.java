@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import to.msn.wings.minecraft_memo2.Globals;
 import to.msn.wings.minecraft_memo2.R;
 
 /**
@@ -17,9 +18,8 @@ import to.msn.wings.minecraft_memo2.R;
 public class TruckActivity extends Activity {
 
     ListView listview;
-    String[] members = {"トロッコ","かまど付きトロッコ","チェスト付きトロッコ","ホッパー付きトロッコ","TNT付きトロッコ",
-            "レール","パワードレール","ディテクターレール","アクティベーターレール","ボート"};
     Intent intent;
+    Globals globals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,9 @@ public class TruckActivity extends Activity {
 
         intent = new Intent(TruckActivity.this, Truck_MinecartActivity.class);
 
+        globals = (Globals) this.getApplication();
+        globals.GlobalsInit();
+        String members[] = globals.truck_member;
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.truck_base);
         listview = (ListView) findViewById(R.id.listview);

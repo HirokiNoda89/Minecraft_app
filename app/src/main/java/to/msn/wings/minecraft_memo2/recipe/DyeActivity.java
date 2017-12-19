@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import to.msn.wings.minecraft_memo2.Globals;
 import to.msn.wings.minecraft_memo2.R;
 
 /**
@@ -17,8 +18,8 @@ import to.msn.wings.minecraft_memo2.R;
 public class DyeActivity extends Activity {
 
     ListView listview;
-    String[] members = {"赤色","橙色","黄色","黄緑色","水色","空色","紫色","赤紫色","桃色","薄灰色","灰色"};
     Intent intent;
+    Globals globals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,9 @@ public class DyeActivity extends Activity {
 
         intent = new Intent(DyeActivity.this, Dye_RoseRedActivity.class);
 
+        globals = (Globals) this.getApplication();
+        globals.GlobalsInit();
+        String members[] = globals.dye_member;
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.base);
         listview = (ListView) findViewById(R.id.listview);

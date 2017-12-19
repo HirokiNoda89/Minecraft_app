@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import to.msn.wings.minecraft_memo2.Globals;
 import to.msn.wings.minecraft_memo2.R;
 
 /**
@@ -17,12 +18,8 @@ import to.msn.wings.minecraft_memo2.R;
 public class MachineActivity extends Activity {
 
     ListView listview;
-    String[] members = {"木のドア","鉄のドア","木のトラップドア","鉄のトラップドア","フェンスゲート",
-            "感圧式スイッチ","重量感圧板","ボタン","レバー","レッドストーントーチ",
-            "レッドストーンリピーター","レッドストーンコンパレーター","ジュークボックス","音符ブロック","ドロッパー",
-            "ディスペンサー","ピストン","粘着ピストン","レッドストーンランプ","トリップワイヤーフック",
-            "トラップチェスト","ホッパー","レッドストーンブロック","日照センサー","オブザーバー"};
     Intent intent;
+    Globals globals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +28,9 @@ public class MachineActivity extends Activity {
 
         intent = new Intent(MachineActivity.this, Machine_Wooden_doorActivity.class);
 
+        globals = (Globals) this.getApplication();
+        globals.GlobalsInit();
+        String members[] = globals.machine_member;
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.tool_base);
         listview = (ListView) findViewById(R.id.listview);

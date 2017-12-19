@@ -1,8 +1,8 @@
 package to.msn.wings.minecraft_memo2;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -14,9 +14,9 @@ import to.msn.wings.minecraft_memo2.recipe.RecipeActivity;
  * Created by 4163104 on 2017/09/07.
  */
 
-public class home extends Activity {
+public class home extends AppCompatActivity {
     ListView listview;
-    String[] members = {"ワールド","レシピ"};
+    String[] members = {"ワールド","レシピ","検索"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +44,9 @@ public class home extends Activity {
                         Intent i2 = new Intent(home.this,RecipeActivity.class);
                         startActivity(i2);
                         break;
+                    case 2:
+                        Intent i3 = new Intent(home.this,Search_Activity.class);
+                        startActivity(i3);
 
                 }
             }

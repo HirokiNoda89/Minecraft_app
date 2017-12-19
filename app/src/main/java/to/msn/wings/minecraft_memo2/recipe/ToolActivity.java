@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import to.msn.wings.minecraft_memo2.Globals;
 import to.msn.wings.minecraft_memo2.R;
 
 /**
@@ -17,10 +18,8 @@ import to.msn.wings.minecraft_memo2.R;
 public class ToolActivity extends Activity {
 
     ListView listview;
-    String[] members = {"斧", "ツルハシ", "シャベル", "剣", "クワ", "弓", "矢", "マーキングの矢", "効果付きの矢", "火打石と打ち金",
-            "バケツ", "コンパス", "時計", "釣り竿","白紙の地図","地図(拡張)","地図(複製)","ハサミ","ファイヤーチャージ","本と羽ペン",
-            "著書/記入済みの本(コピー)","ニンジン付きの棒","首綱"};
     Intent intent;
+    Globals globals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +28,9 @@ public class ToolActivity extends Activity {
 
         intent = new Intent(ToolActivity.this, Tool_AxeActivity.class);
 
+        globals = (Globals) this.getApplication();
+        globals.GlobalsInit();
+        String members[] = globals.tool_member;
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.tool_base);
         listview = (ListView) findViewById(R.id.listview);

@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import to.msn.wings.minecraft_memo2.Globals;
 import to.msn.wings.minecraft_memo2.R;
 
 /**
@@ -17,8 +18,8 @@ import to.msn.wings.minecraft_memo2.R;
 public class BrewingActivity extends Activity {
 
     ListView listview;
-    String[] members = {"醸造台","ガラス瓶","大釜","醗酵したクモの目","マグマクリーム","ブレイズパウダー","きらめくスイカ","金のニンジン"};
     Intent intent;
+    Globals globals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,9 @@ public class BrewingActivity extends Activity {
 
         intent = new Intent(BrewingActivity.this, Brewing_StandActivity.class);
 
+        globals = (Globals) this.getApplication();
+        globals.GlobalsInit();
+        String members[] = globals.brewing_member;
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_base);
         listview = (ListView) findViewById(R.id.listview);

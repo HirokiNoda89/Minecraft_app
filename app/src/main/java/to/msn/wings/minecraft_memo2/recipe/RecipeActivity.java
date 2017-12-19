@@ -1,8 +1,8 @@
 package to.msn.wings.minecraft_memo2.recipe;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 import to.msn.wings.minecraft_memo2.R;
 
-public class RecipeActivity extends Activity{
+public class RecipeActivity extends AppCompatActivity {
 
     ListView listview;
     String[] members = {"基本", "ブロック", "道具", "防具", "乗り物", "機械", "食料", "醸造用品", "染料", "その他"};

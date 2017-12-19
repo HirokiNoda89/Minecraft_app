@@ -55,6 +55,10 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
 また、ベッドと染料をクラフトすると色の変更が可能になった。</string>
     <drawable name="baseItem6">@drawable/bed_iloveimg_resized</drawable>
 
+    <string name="base6_1">
+    </string>
+    <drawable name="baseItem6_1">@drawable/bed1</drawable>
+
     <!--ブロック-->
 
     <string name="block0">鉄インゴット/金インゴット/ダイヤモンド/ラピスラズリ/エメラルド/レッドストーン/石炭：9 \n
@@ -236,7 +240,7 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
     <drawable name="otherItem12">@drawable/sign</drawable>
 
     <string name="other13">棒：7 \n壁面に貼り付けると昇り降りが出来るようになる。無操作中にスニークをするとその高さで留まる。水流を遮断する。スニーク中は物を破壊するスピードが遅くなる。</string>
-    <drawable name="otherItem13">@drawable/sign</drawable>
+    <drawable name="otherItem13">@drawable/ladder</drawable>
 
     <string name="other14">サトウキビ：3\n
 本や地図を作るのに必要。
@@ -298,7 +302,7 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
     <string name="other30_1">花火の星：1　染料：1～8　(※配置不問) \n 上で作製した花火の星に更に染料を追加すると、フェード効果を追加でき、打ち上げた時に色が変化するようになる。 既にフェードが付いている花火の星を使用してこのレシピでクラフティングすると、フェード効果が上書きされる。</string>
     <drawable name="otherItem30_1">@drawable/firework_star</drawable>
 
-    <string name="other31">火薬：1～3　紙：1　花火の星：0～7　(※配置不問) \n 右クリックで使用したり、ディスペンサーに入れてレッドストーン信号を入力することで花火を打ち上げる。 花火の星を使用せずに作成することもできるが、その場合花火は表示されない。 火薬の数が多いほど、花火が開く高さが高くなる。 花火の星を複数使用することもできる。 ver1.10から クラフトで得られる個数が３個になった。</string>
+    <string name="other31">火薬：1～3　紙：1　花火の星：0～7　(※配置不問) \n 右クリックで使用したり、ディスペンサーに入れてレッドストーン信号を入力することで花火を打ち上げる。 花火の星を使用せずに作成することもできるが、その場合花火は表示されない。 火薬の数が多いほど、花火が開く高さが高くなる。 花火の星を複数使用することもできる。 ver1.10から クラフトで得られる個数が３個になった。\n</string>
     <drawable name="otherItem31">@drawable/rocket2</drawable>
 
     <string name="other32">各色羊毛：6 棒：1 \n 通称バナー。 ver1.8から染料とクラフトすることで様々な模様をつけることができる。</string>

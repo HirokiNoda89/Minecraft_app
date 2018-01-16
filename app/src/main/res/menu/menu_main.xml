@@ -2,9 +2,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="to.msn.wings.minecraft_memo2.recipe.BaseActivity">
+
     <item
         android:id="@+id/action_settings"
-        android:icon="@drawable/home_picture"
+        android:icon="@drawable/home_picture2"
         android:orderInCategory="1"
         android:title="settings"
         app:showAsAction="always"/>

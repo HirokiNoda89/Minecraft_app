@@ -157,7 +157,6 @@ public class ListActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main,menu);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
@@ -166,7 +165,11 @@ public class ListActivity extends AppCompatActivity {
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 break;
+            case android.R.id.home:
+                finish();
+                break;
         }
         return true;
     }
+
 }

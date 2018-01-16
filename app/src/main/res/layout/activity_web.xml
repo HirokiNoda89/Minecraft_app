@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="精錬"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/furnace"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="精錬や料理に必要な装置。かまどに燃料と鉱石を配置することで鉱石から鉱物を取り出すことができたり、生の食材を焼いて調理することで回復効果の高い食糧を得ることができる。右クリックすることでクラフトウィンドウを表示する。"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="精錬のやり方"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/smeltingmenu"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="・クラフトウィンドウの左下に燃料、左上に精錬する素材を置く。成功すると真ん中の矢印が左から右へ白くなって行くので、完全に白くなるまで10秒間待つ。矢印が完全に白くなったら精錬完了で、完成品が右側に表示される。
+\n・左中央の炎型の模様は「燃焼中の燃料の残量」を表しており、上から下へ炎のグラフィックが消えていく。これは精錬可能な残り時間の目安となる。
+\n・精錬が終わった時に燃料と素材が余っている場合、自動的に次の精錬が始まる。全ての素材を精錬したくないなら、あらかじめその分を減らしておいた方が良い。"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="燃料に使えるアイテム(ver.1.11時点)"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="649dp"
+            android:src="@drawable/lava_bucket" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="※1 燃料になるのは中身の溶岩源で、容器のバケツは残る。
+\n※2 ツールの耐久値は問わない。新品でも使いかけでも燃焼効率は変わらない。
+
+\n \n・燃焼効率は、その燃料1つでいくつの素材を精錬できるか表すもの。整数でないものは偶数個(ハーフブロックのみ4つ)を使用すると無駄がない。
+\n・燃料を好きな分だけ使うということはできない。
+精錬が始まった瞬間に燃料が消費され、上記表の「燃焼時間」を過ぎるまで燃え続ける。
+石炭1つ(燃焼効率8)を燃料に材料1個を精錬した場合、残り7個分が無駄になる。
+\n・途中で素材を入れ替えた場合、入れかえの時間だけ燃料が無駄になる。
+石炭1つで鉄鉱石4つを精錬してすぐに金鉱石4つを入れても
+入れ替えのわずかな時間で燃料が無駄になり、この場合は最大で鉄鉱石4つと金鉱石3つになる。\n"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="ホッパーによる搬入・搬出"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="ホッパーを使用する事で精錬の自動化が可能。 素材の入れ替えによるラグが発生せず、異なる素材も無駄なく精錬できるようになる。 ただし、自動搬出にすると普段アイテムを取り出した際に出現する経験値が得られない。"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/furnacehopper"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="かまどの上部のホッパーで精錬したいアイテムを、かまどの側面のホッパーで燃料をそれぞれ搬入する。 精錬後のアイテムは順次下部のホッパーから搬出されていく。 燃料に溶岩を使用した場合は空のバケツも下部ホッパーから搬出される。"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="かまどを使ったレシピ
+食料"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fire"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="鉱石・材料"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1049dp"
+            android:src="@drawable/fur_ore" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="回収にシルクタッチのエンチャントが必要な鉱石"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="※この項の鉱石は幸運のエンチャントのついたツルハシにより採掘量を増やす事が出来る為、精錬はできるが非推奨。特にレッドストーン鉱石・ラピスラズリ鉱石は通常のツルハシによる破壊でも複数採取できるため精錬では損をする(精錬で取り出せる素材は常に1個である)。"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/silc_ore"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="精錬が停止する場合"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="プレイヤーがかまどをチャンクがメモリーから解放されるほど離れると、プレイヤーがかまどに戻らない限り精錬が中止する。
+プレイヤーがかまどがあるディメンションを離れると、プレイヤーがかまどがあるディメンションに戻らない限り精錬が中止する。
+精錬中にベッドで寝ても精錬は加速しない。これはベッドが時間を進めるわけではなく、プログラム上の時刻の値を書き換えているだけだからである。"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

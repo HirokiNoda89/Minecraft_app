@@ -16,7 +16,7 @@ import to.msn.wings.minecraft_memo2.recipe.RecipeActivity;
 
 public class home extends AppCompatActivity {
     ListView listview;
-    String[] members = {"ワールド","レシピ","検索"};
+    String[] members = {"ワールド","レシピ","レシピ検索","精錬とは"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,11 @@ public class home extends AppCompatActivity {
                     case 2:
                         Intent i3 = new Intent(home.this,Search_Activity.class);
                         startActivity(i3);
+                        break;
+                    case 3:
+                        Intent i4 = new Intent(home.this,Web_Activity.class);
+                        startActivity(i4);
+                        break;
 
                 }
             }

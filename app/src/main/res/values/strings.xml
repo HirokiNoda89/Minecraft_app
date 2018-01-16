@@ -333,28 +333,81 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
     <string name="dye2">タンポポ：1 \n 黄色の染料。イエロー。</string>
     <drawable name="dyeItem2">@drawable/dye_dandelion_yellow</drawable>
 
-    <string name="dye3">緑色の染料(※1)：1　白色の染料(※2)：1 \n 黄緑色の染料。ライム。</string>
+    <string name="dye3">緑色の染料(※1)：1　白色の染料(※2)：1 \n 黄緑色の染料。ライム。\n \n ※1 緑色の染料(Green Dye:グリーン)は、かまどにサボテン(Cactus)を載せて精錬して作る。\n \n ※2 白は骨から作れる骨粉(Bone Meal:ホワイト)
+、青はラピスラズリ(Lapis Lazuli:ブルー)、
+黒はイカのドロップのイカスミ
+(Ink Sac:ブラック)、
+茶色はカカオ豆(Cocoa Beans:ブラウン)
+がそのまま染料になる。</string>
     <drawable name="dyeItem3">@drawable/dye_lime</drawable>
 
-    <string name="dye4">緑の染料(※1)：1　青の染料(※2)：1 \n 水色の染料。シアン。</string>
+    <string name="dye4">緑の染料(※1)：1　青の染料(※2)：1 \n 水色の染料。シアン。\n \n ※1 緑色の染料(Green Dye:グリーン)は、
+かまどにサボテン(Cactus)を載せて精錬して作る。\n \n ※2 白は骨から作れる骨粉(Bone Meal:ホワイト)
+、青はラピスラズリ(Lapis Lazuli:ブルー)、
+黒はイカのドロップのイカスミ
+(Ink Sac:ブラック)、
+茶色はカカオ豆(Cocoa Beans:ブラウン)
+がそのまま染料になる。
+</string>
     <drawable name="dyeItem4">@drawable/dye_cyan</drawable>
 
-    <string name="dye5">白の染料(※2)：1　青の染料(※2)：1 \n 空色の染料。ライトブルー。</string>
+    <string name="dye5">白の染料(※2)：1　青の染料(※2)：1 \n 空色の染料。ライトブルー。\n \n ※2 白は骨から作れる骨粉(Bone Meal:ホワイト)
+、青はラピスラズリ(Lapis Lazuli:ブルー)、
+黒はイカのドロップのイカスミ
+(Ink Sac:ブラック)、
+茶色はカカオ豆(Cocoa Beans:ブラウン)
+がそのまま染料になる。</string>
     <drawable name="dyeItem5">@drawable/crafting_dye_lightblue</drawable>
 
-    <string name="dye6">赤の染料：1　青の染料(※2)：1 \n 紫色の染料。パープル。</string>
+    <string name="dye6">赤の染料：1　青の染料(※2)：1 \n 紫色の染料。パープル。
+    \n \n ※2 白は骨から作れる
+骨粉(Bone Meal:ホワイト)、
+青はラピスラズリ
+(Lapis Lazuli:ブルー)、
+黒はイカのドロップのイカスミ
+(Ink Sac:ブラック)、
+茶色はカカオ豆
+(Cocoa Beans:ブラウン)
+がそのまま染料になる。</string>
     <drawable name="dyeItem6">@drawable/dye_purple</drawable>
 
     <string name="dye7">紫の染料：1　ピンクの染料：1 \n 赤紫色の染料。マゼンタ。</string>
     <drawable name="dyeItem7">@drawable/dye_magenta</drawable>
 
-    <string name="dye8">赤の染料：1　白の染料(※2)：1 \n 桃色の染料。ピンク。</string>
+    <string name="dye8">赤の染料：1　白の染料(※2)：1 \n 桃色の染料。ピンク。
+    \n \n ※2 白は骨から作れる
+骨粉(Bone Meal:ホワイト)、
+青はラピスラズリ
+(Lapis Lazuli:ブルー)、
+黒はイカのドロップのイカスミ
+(Ink Sac:ブラック)、
+茶色はカカオ豆
+(Cocoa Beans:ブラウン)
+がそのまま染料になる。</string>
     <drawable name="dyeItem8">@drawable/dye_pink</drawable>
 
-    <string name="dye9">白の染料(※2)：1　灰色の染料：1 \n 薄灰色の染料。ライトグレー。</string>
+    <string name="dye9">白の染料(※2)：1　灰色の染料：1 \n 薄灰色の染料。ライトグレー。
+    \n ※2 白は骨から作れる
+骨粉(Bone Meal:ホワイト)、
+青はラピスラズリ
+(Lapis Lazuli:ブルー)、
+黒はイカのドロップのイカスミ
+(Ink Sac:ブラック)、
+茶色はカカオ豆
+(Cocoa Beans:ブラウン)
+がそのまま染料になる。</string>
     <drawable name="dyeItem9">@drawable/dye_lightgray</drawable>
 
-    <string name="dye10">白の染料(※2)：1　黒の染料(※2)：1 \n 灰色の染料。グレー。</string>
+    <string name="dye10">白の染料(※2)：1　黒の染料(※2)：1 \n 灰色の染料。グレー。
+    \n \n ※2 白は骨から作れる
+骨粉(Bone Meal:ホワイト)、
+青はラピスラズリ
+(Lapis Lazuli:ブルー)、
+黒はイカのドロップのイカスミ
+(Ink Sac:ブラック)、
+茶色はカカオ豆
+(Cocoa Beans:ブラウン)
+がそのまま染料になる。</string>
     <drawable name="dyeItem10">@drawable/dye_gray</drawable>
 
     <string name="brewing0">レイズロッド：1　丸石：3 \n 各種素材を使って、ポーションを作ることができる。 一つの素材を最大3つのポーションに添加できる。 ver1.9 から醸造にはブレイズパウダーが必要になり、パウダー1つで２０回の醸造ができる。 素手で壊すとアイテム化しない。回収にはツルハシが必要。 また、光源ブロックであり、1レベルの光を放つ。</string>
@@ -410,7 +463,7 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
     <drawable name="foodItem8">@drawable/rabbit_stew</drawable>
 
     <string name="food9">ビートルート：6　ボウル：1 \n ver1.9より追加(PE版からの逆移植) 満腹度を3回復する。 キノコシチューと同じくスタック出来ない。 食べるとボウルのみが残る。</string>
-    <drawable name="foodItem9">@drawable/soup</drawable>
+    <drawable name="foodItem9">@drawable/beetroot_soup</drawable>
 
         <string name="tool0">棒：2　木材/丸石/鉄インゴット/金インゴット/ダイヤモンド：3\n
         木に関するブロックを素手より早く壊せる。 剣に続いて攻撃力が高いので、武器がない場合の代用も可能。</string>
@@ -663,4 +716,12 @@ ver1.12から、同色の羊毛を使用しないとクラフトできなくな�
     <string name="machine24">丸石：6　レッドストーン：2　ネザー水晶：1\n
         顔の模様が付いた面に接する1ブロックを監視する。 監視しているブロックに変化(更新)があると、後部から信号を発する。</string>
     <drawable name="machineItem24">@drawable/observer</drawable>
+
+    <string name="name0">原木(樫/松/白樺/ジャングルの木/アカシア/ダークオーク)：1\n
+建材としての使用の他にも様々な用途がある。
+原木一つから得られる燃料としての能力は木炭の次に高効率。
+火をつけたり、近くに火気や溶岩等の熱源があると延焼する。
+原木の種類によって木材の色も異なり、種類の違う木材はスタック時に別枠扱いで、
+木材の種類により色が変わる階段の作成などには、混ぜて使うことはできない。</string>
+    <drawable name="Item0">@drawable/wood2_iloveimg_resized</drawable>
 </resources>

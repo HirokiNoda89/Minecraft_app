@@ -1,8 +1,11 @@
 package to.msn.wings.minecraft_memo2.recipe;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -10,12 +13,13 @@ import android.widget.ListView;
 
 import to.msn.wings.minecraft_memo2.Globals;
 import to.msn.wings.minecraft_memo2.R;
+import to.msn.wings.minecraft_memo2.home;
 
 /**
  * Created by 4163104 on 2017/09/28.
  */
 
-public class ToolActivity extends Activity {
+public class ToolActivity extends AppCompatActivity {
 
     ListView listview;
     Intent intent;
@@ -25,6 +29,8 @@ public class ToolActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         intent = new Intent(ToolActivity.this, Tool_AxeActivity.class);
 
@@ -74,5 +80,24 @@ public class ToolActivity extends Activity {
                 }
             }
         });
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.action_settings:
+                Intent intent = new Intent(ToolActivity.this,home.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                break;
+            case android.R.id.home:
+                finish();
+                break;
+        }
+        return true;
     }
 }

@@ -1,6 +1,5 @@
 package to.msn.wings.minecraft_memo2;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -9,6 +8,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
@@ -22,7 +22,7 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.UUID;
 
-public class CreateMemoActivity extends Activity {
+public class CreateMemoActivity extends AppCompatActivity {
 
     MemoOpenHelper helper = null;
     boolean newFlag = false;

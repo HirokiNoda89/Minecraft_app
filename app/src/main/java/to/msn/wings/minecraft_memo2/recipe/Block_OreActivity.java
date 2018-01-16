@@ -1,9 +1,12 @@
 package to.msn.wings.minecraft_memo2.recipe;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -12,8 +15,9 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
 
 import to.msn.wings.minecraft_memo2.R;
+import to.msn.wings.minecraft_memo2.home;
 
-public class Block_OreActivity extends Activity {
+public class Block_OreActivity extends AppCompatActivity {
 
     int viewId;
     int strId;
@@ -23,6 +27,8 @@ public class Block_OreActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         Intent intent = getIntent();
         int key = intent.getIntExtra("key",0);
@@ -99,4 +105,22 @@ public class Block_OreActivity extends Activity {
         finish();
     }
 
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.action_settings:
+                Intent intent = new Intent(Block_OreActivity.this,home.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                break;
+            case android.R.id.home:
+                finish();
+                break;
+        }
+        return true;
+    }
 }

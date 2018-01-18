@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:paddingStart="40dp"
     android:paddingEnd="5dp"
-    android:background="#1eba1b"
+    android:background="#27c63c"
     android:textSize="50dp"
     android:textColor="#aaffdd" >
 </TextView>

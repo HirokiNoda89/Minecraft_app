@@ -31,6 +31,7 @@ public class FoodActivity extends AppCompatActivity {
         setContentView(R.layout.activity_base);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+        setTitle("レシピ");
 
         intent = new Intent(FoodActivity.this, Food_BowlActivity.class);
 
@@ -70,7 +71,7 @@ public class FoodActivity extends AppCompatActivity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.menu_main,menu);
+        getMenuInflater().inflate(R.menu.menu_main2,menu);
         return true;
     }
     @Override

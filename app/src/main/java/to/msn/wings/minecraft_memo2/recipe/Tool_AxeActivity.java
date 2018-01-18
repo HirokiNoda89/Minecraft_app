@@ -32,6 +32,7 @@ public class Tool_AxeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+        setTitle("レシピ詳細");
 
         Intent intent = getIntent();
         int key = intent.getIntExtra("key",0);
@@ -85,7 +86,7 @@ public class Tool_AxeActivity extends AppCompatActivity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.menu_main,menu);
+        getMenuInflater().inflate(R.menu.menu_main2,menu);
         return true;
     }
     @Override

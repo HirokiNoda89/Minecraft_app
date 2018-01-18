@@ -31,6 +31,7 @@ public class ToolActivity extends AppCompatActivity {
         setContentView(R.layout.activity_base);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+        setTitle("レシピ");
 
         intent = new Intent(ToolActivity.this, Tool_AxeActivity.class);
 
@@ -83,7 +84,7 @@ public class ToolActivity extends AppCompatActivity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.menu_main,menu);
+        getMenuInflater().inflate(R.menu.menu_main2,menu);
         return true;
     }
     @Override

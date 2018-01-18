@@ -30,6 +30,7 @@ public class home extends AppCompatActivity {
             adapter.add(str);
         }
 
+
         listview.setAdapter(adapter);
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {

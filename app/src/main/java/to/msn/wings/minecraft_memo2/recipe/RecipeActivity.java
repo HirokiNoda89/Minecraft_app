@@ -23,6 +23,7 @@ public class RecipeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recipi);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+        setTitle("レシピ");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.base);
         listview = (ListView) findViewById(R.id.listview);

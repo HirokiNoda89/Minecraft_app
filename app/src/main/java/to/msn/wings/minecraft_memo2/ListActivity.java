@@ -7,12 +7,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -28,7 +26,7 @@ public class ListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-
+        setTitle("メモ");
 
         if(helper == null){
             helper = new MemoOpenHelper(ListActivity.this);
@@ -64,7 +62,7 @@ public class ListActivity extends AppCompatActivity {
         // Adapter生成
         final SimpleAdapter simpleAdapter = new SimpleAdapter(this,
                 memoList, // 使用するデータ
-                android.R.layout.simple_list_item_2, // 使用するレイアウト
+                R.layout.raw, // 使用するレイアウト
                 new String[]{"body","xyz"}, // どの項目を
                 new int[]{android.R.id.text1, android.R.id.text2} // どのidの項目に入れるか
         );
@@ -138,19 +136,19 @@ public class ListActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
 
-
-        Button newButton = (Button) findViewById(R.id.newButton);
-        newButton.setOnClickListener(new View.OnClickListener() {
-
+    public void dialog(){
+        AlertDialog.Builder dialog = new AlertDialog.Builder(ListActivity.this);
+        dialog.setTitle("HELP");
+        dialog.setMessage("右上のプラスアイコンをタップするとメモを新規作成できます。メモを削除するときはメモを長押ししてください。");
+        dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ListActivity.this,CreateMemoActivity.class);
-                intent.putExtra("id", "");
-                startActivity(intent);
+            public void onClick(DialogInterface dialog, int which) {
+
             }
         });
-        Log.i("zl=test",memoList.toString());
+        dialog.show();
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
@@ -167,6 +165,14 @@ public class ListActivity extends AppCompatActivity {
                 break;
             case android.R.id.home:
                 finish();
+                break;
+            case R.id.add_memo:
+                intent = new Intent(ListActivity.this,CreateMemoActivity.class);
+                intent.putExtra("id", "");
+                startActivity(intent);
+                break;
+            case R.id.help:
+                dialog();
                 break;
         }
         return true;

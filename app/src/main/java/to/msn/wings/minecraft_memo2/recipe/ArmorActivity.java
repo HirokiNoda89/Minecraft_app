@@ -27,6 +27,7 @@ public class ArmorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_base);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+        setTitle("レシピ");
 
         globals = (Globals) this.getApplication();
         globals.GlobalsInit();
@@ -61,7 +62,7 @@ public class ArmorActivity extends AppCompatActivity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.menu_main,menu);
+        getMenuInflater().inflate(R.menu.menu_main2,menu);
         return true;
     }
     @Override

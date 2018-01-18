@@ -27,6 +27,7 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
         setTitle("メモ");
+        
 
         if(helper == null){
             helper = new MemoOpenHelper(ListActivity.this);

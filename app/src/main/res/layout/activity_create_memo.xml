@@ -34,19 +34,34 @@
         android:layout_height="wrap_content"
         android:id="@+id/imgView" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="gallery"
-        android:layout_gravity="center"
-        android:id="@+id/imgbtn"
-        android:src="@drawable/picture1"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="gallery"
+                android:layout_gravity="center"
+                android:id="@+id/imgbtn"
+                android:src="@drawable/picture1"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/register"

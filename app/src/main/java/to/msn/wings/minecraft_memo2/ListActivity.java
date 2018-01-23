@@ -142,7 +142,9 @@ public class ListActivity extends AppCompatActivity {
     public void dialog(){
         AlertDialog.Builder dialog = new AlertDialog.Builder(ListActivity.this);
         dialog.setTitle("HELP");
-        dialog.setMessage("右上のプラスアイコンをタップするとメモを新規作成できます。メモを削除するときはメモを長押ししてください。");
+        dialog.setMessage("右上のプラスアイコンをタップするとメモを新規作成できます。" +
+                "メモをタップすると作ったメモの内容を確認できます。" +
+                "メモを削除するときはメモを長押ししてください。");
         dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

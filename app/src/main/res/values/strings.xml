@@ -2,6 +2,14 @@
     <string name="app_name">minecraft_memo2</string>
     <string name="title_activity_wood">WoodActivity</string>
     <string name="title_activity_ore">OreActivity</string>
+    <string name="web_1"><u>精錬</u></string>
+    <string name="web_2"><u>精錬のやり方</u></string>
+    <string name="web_3"><u>燃料に使えるアイテム(ver.1.11時点)</u></string>
+    <string name="web_4"><u>ホッパーによる搬入・搬出</u></string>
+    <string name="web_5"><u>かまどを使ったレシピ食料</u></string>
+    <string name="web_6"><u>鉱石・材料</u></string>
+    <string name="web_7"><u>回収にシルクタッチのエンチャントが必要な鉱石</u></string>
+    <string name="web_8"><u>精錬が停止する場合</u></string>
 
 <!--基本-->
     <string name="base0">原木(樫/松/白樺/ジャングルの木/アカシア/ダークオーク)：1\n

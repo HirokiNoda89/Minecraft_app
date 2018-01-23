@@ -28,6 +28,7 @@ public class Search_Hit_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+        setTitle("詳細");
 
         Intent intent = getIntent();
         String str = intent.getStringExtra("name");

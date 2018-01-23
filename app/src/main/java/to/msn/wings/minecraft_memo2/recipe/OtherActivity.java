@@ -31,7 +31,7 @@ public class OtherActivity extends AppCompatActivity {
         setContentView(R.layout.activity_base);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        setTitle("レシピ");
+        setTitle("その他");
 
         intent = new Intent(OtherActivity.this, Other_EnchantmentTable_Activity.class);
 
@@ -39,7 +39,7 @@ public class OtherActivity extends AppCompatActivity {
         globals.GlobalsInit();
         String members[] = globals.other_member;
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_base);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.base_2);
         listview = (ListView) findViewById(R.id.listview);
 
         for (String str : members) {

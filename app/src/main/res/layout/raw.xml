@@ -10,7 +10,7 @@
         android:text="TextView"
         android:textSize="40sp"
         android:textColor="#ffffff"
-        android:background="#27c63c">
+        android:background="#ffb41e">
     </TextView>
 
     <TextView
@@ -20,7 +20,7 @@
         android:text="TextView"
         android:textSize="30sp"
         android:textColor="#ffffff"
-        android:background="#27c63c">
+        android:background="#ffb41e">
     </TextView>
 
 </LinearLayout>

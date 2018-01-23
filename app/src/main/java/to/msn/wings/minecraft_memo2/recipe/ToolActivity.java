@@ -31,7 +31,7 @@ public class ToolActivity extends AppCompatActivity {
         setContentView(R.layout.activity_base);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        setTitle("レシピ");
+        setTitle("道具");
 
         intent = new Intent(ToolActivity.this, Tool_AxeActivity.class);
 
@@ -39,7 +39,7 @@ public class ToolActivity extends AppCompatActivity {
         globals.GlobalsInit();
         String members[] = globals.tool_member;
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.tool_base);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.base_2);
         listview = (ListView) findViewById(R.id.listview);
 
         for (String str : members) {

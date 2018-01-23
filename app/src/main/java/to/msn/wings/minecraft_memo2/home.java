@@ -22,6 +22,7 @@ public class home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        setTitle("マイクラ座標管理");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.base);
         listview = (ListView) findViewById(R.id.listview);

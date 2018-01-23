@@ -31,7 +31,7 @@ public class FoodActivity extends AppCompatActivity {
         setContentView(R.layout.activity_base);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        setTitle("レシピ");
+        setTitle("食料");
 
         intent = new Intent(FoodActivity.this, Food_BowlActivity.class);
 
@@ -39,7 +39,7 @@ public class FoodActivity extends AppCompatActivity {
         globals.GlobalsInit();
         String members[] = globals.food_member;
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_base);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.base_2);
         listview = (ListView) findViewById(R.id.listview);
 
         for (String str : members) {

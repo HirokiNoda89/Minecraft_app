@@ -117,7 +117,7 @@ public class Search_Activity extends AppCompatActivity {
     }
 
     public void onClick(View v){
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.base);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.search_base);
         adapter.clear();
         String str = editText.getText().toString();
         search_hit.clear();

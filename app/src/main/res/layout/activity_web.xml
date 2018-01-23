@@ -15,7 +15,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="精錬"
+            android:text="@string/web_1"
+            android:textColor="#ff7f00"
             android:textStyle="bold"
             android:textSize="30sp"
             android:gravity="center"/>
@@ -34,9 +35,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="精錬のやり方"
+            android:text="@string/web_2"
             android:textStyle="bold"
             android:textSize="25sp"
+            android:textColor="#ff7f00"
             android:gravity="center"/>
 
         <ImageView
@@ -56,7 +58,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25sp"
-            android:text="燃料に使えるアイテム(ver.1.11時点)"/>
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ff7f00"
+            android:text="@string/web_3"/>
 
         <ImageView
             android:layout_width="match_parent"
@@ -83,7 +88,8 @@
             android:layout_height="wrap_content"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:text="ホッパーによる搬入・搬出"
+            android:textColor="#ff7f00"
+            android:text="@string/web_4"
             android:gravity="center"/>
 
         <TextView
@@ -108,9 +114,9 @@
             android:layout_height="wrap_content"
             android:textSize="25sp"
             android:gravity="center"
-            android:text="かまどを使ったレシピ
-食料"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#ff7f00"
+            android:text="@string/web_5"/>
 
         <ImageView
             android:layout_width="match_parent"
@@ -120,9 +126,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="鉱石・材料"
+            android:text="@string/web_6"
             android:textSize="25sp"
             android:gravity="center"
+            android:textColor="#ff7f00"
             android:textStyle="bold"/>
 
         <ImageView
@@ -135,7 +142,9 @@
             android:layout_height="wrap_content"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:text="回収にシルクタッチのエンチャントが必要な鉱石"/>
+            android:gravity="center"
+            android:textColor="#ff7f00"
+            android:text="@string/web_7"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -153,7 +162,9 @@
             android:layout_height="wrap_content"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:text="精錬が停止する場合"/>
+            android:text="@string/web_8"
+            android:gravity="center"
+            android:textColor="#ff7f00"/>
 
         <TextView
             android:layout_width="match_parent"

@@ -31,7 +31,7 @@ public class MachineActivity extends AppCompatActivity {
         setContentView(R.layout.activity_base);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        setTitle("レシピ");
+        setTitle("機械");
 
         intent = new Intent(MachineActivity.this, Machine_Wooden_doorActivity.class);
 
@@ -39,7 +39,7 @@ public class MachineActivity extends AppCompatActivity {
         globals.GlobalsInit();
         String members[] = globals.machine_member;
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.tool_base);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.base_2);
         listview = (ListView) findViewById(R.id.listview);
 
         for (String str : members) {

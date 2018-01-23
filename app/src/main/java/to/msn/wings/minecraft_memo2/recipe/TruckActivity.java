@@ -31,7 +31,7 @@ public class TruckActivity extends AppCompatActivity {
         setContentView(R.layout.activity_base);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        setTitle("レシピ");
+        setTitle("乗り物");
 
         intent = new Intent(TruckActivity.this, Truck_MinecartActivity.class);
 
@@ -39,7 +39,7 @@ public class TruckActivity extends AppCompatActivity {
         globals.GlobalsInit();
         String members[] = globals.truck_member;
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.truck_base);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.base_2);
         listview = (ListView) findViewById(R.id.listview);
 
         for (String str : members) {

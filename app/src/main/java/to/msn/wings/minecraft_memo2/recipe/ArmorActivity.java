@@ -27,7 +27,7 @@ public class ArmorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_base);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        setTitle("レシピ");
+        setTitle("防具");
 
         globals = (Globals) this.getApplication();
         globals.GlobalsInit();
@@ -35,7 +35,7 @@ public class ArmorActivity extends AppCompatActivity {
 
         intent = new Intent(ArmorActivity.this, Armor_HelmetsActivity.class);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.base);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.base_2);
         listview = (ListView) findViewById(R.id.listview);
 
         for (String str : members) {

@@ -26,7 +26,7 @@ public class BlockActivity extends AppCompatActivity {
         setContentView(R.layout.activity_base);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        setTitle("レシピ");
+        setTitle("ブロック");
 
         intent = new Intent(BlockActivity.this,Block_OreActivity.class);
 
@@ -34,7 +34,7 @@ public class BlockActivity extends AppCompatActivity {
         globals.GlobalsInit();
         String members[] = globals.block_member;
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.block_base);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.base_2);
         listview = (ListView) findViewById(R.id.listview);
 
         for (String str: members){

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="to.msn.wings.minecraft_memo2">
+    package="com.morijyobi.minecraft">
 
     <application
         android:allowBackup="true"
@@ -8,44 +8,44 @@
         android:label="マイクラ座標管理"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".Globals">
-        <activity android:name=".home">
+        android:name="com.morijyobi.minecraft.Globals">
+        <activity android:name="com.morijyobi.minecraft.home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListActivity" />
+        <activity android:name="com.morijyobi.minecraft.ListActivity" />
         <activity
-            android:name=".CreateMemoActivity"
+            android:name="com.morijyobi.minecraft.CreateMemoActivity"
             android:label="test" />
-        <activity android:name=".TestActivity"/>
-        <activity android:name=".Search_Activity"/>
-        <activity android:name=".Search_Hit_Activity"/>
-        <activity android:name=".Web_Activity"/>
-        <activity android:name=".recipe.RecipeActivity" />
-        <activity android:name=".recipe.BaseActivity" />
-        <activity android:name=".recipe.BlockActivity" />
-        <activity android:name=".recipe.ToolActivity"/>
-        <activity android:name=".recipe.ArmorActivity"/>
-        <activity android:name=".recipe.TruckActivity"/>
-        <activity android:name=".recipe.MachineActivity"/>
-        <activity android:name=".recipe.FoodActivity"/>
-        <activity android:name=".recipe.BrewingActivity"/>
-        <activity android:name=".recipe.DyeActivity"/>
-        <activity android:name=".recipe.OtherActivity"/>
+        <activity android:name="com.morijyobi.minecraft.TestActivity"/>
+        <activity android:name="com.morijyobi.minecraft.Search_Activity"/>
+        <activity android:name="com.morijyobi.minecraft.Search_Hit_Activity"/>
+        <activity android:name="com.morijyobi.minecraft.Web_Activity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.RecipeActivity" />
+        <activity android:name="com.morijyobi.minecraft.recipe.BaseActivity" />
+        <activity android:name="com.morijyobi.minecraft.recipe.BlockActivity" />
+        <activity android:name="com.morijyobi.minecraft.recipe.ToolActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.ArmorActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.TruckActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.MachineActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.FoodActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.BrewingActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.DyeActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.OtherActivity"/>
 
-        <activity android:name=".recipe.Base_WoodActivity" />
-        <activity android:name=".recipe.Block_OreActivity" />
-        <activity android:name=".recipe.Tool_AxeActivity"/>
-        <activity android:name=".recipe.Armor_HelmetsActivity"/>
-        <activity android:name=".recipe.Truck_MinecartActivity"/>
-        <activity android:name=".recipe.Machine_Wooden_doorActivity"/>
-        <activity android:name=".recipe.Food_BowlActivity"/>
-        <activity android:name=".recipe.Brewing_StandActivity"/>
-        <activity android:name=".recipe.Dye_RoseRedActivity"/>
-        <activity android:name=".recipe.Other_EnchantmentTable_Activity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Base_WoodActivity" />
+        <activity android:name="com.morijyobi.minecraft.recipe.Block_OreActivity" />
+        <activity android:name="com.morijyobi.minecraft.recipe.Tool_AxeActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Armor_HelmetsActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Truck_MinecartActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Machine_Wooden_doorActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Food_BowlActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Brewing_StandActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Dye_RoseRedActivity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Other_EnchantmentTable_Activity"/>
     </application>
 
 </manifest>

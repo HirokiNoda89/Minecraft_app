@@ -11,7 +11,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/mine_image18"
-    tools:context="to.msn.wings.minecraft_memo2.recipe.BaseActivity">
+    tools:context="com.morijyobi.minecraft.recipe.BaseActivity">
 
     <ListView
         android:layout_width="match_parent"

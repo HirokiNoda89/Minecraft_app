@@ -23,6 +23,7 @@ public class Search_Activity extends AppCompatActivity {
     Globals globals;
     ArrayList<String> search;
     ListView listView;
+    String no_Item;
     ArrayList<String> base_member = new ArrayList<>();
     ArrayList<String> block_member = new ArrayList<>();
     ArrayList<String> tool_member = new ArrayList<>();
@@ -98,11 +99,14 @@ public class Search_Activity extends AppCompatActivity {
             search.add(str);
         }
 
+        no_Item = "から始まるアイテムは存在しません";
+
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
-                        //新しいアクティビティで全部base,tool,foodで(if)区別、アイテムの種類ごとにアイテムを検索,アイテムの番号と種類でアイテム詳細にアクセス
+                    //新しいアクティビティで全部base,tool,foodで(if)区別、アイテムの種類ごとにアイテムを検索,アイテムの番号と種類でアイテム詳細にアクセス
                     default:
                         Intent intent = new Intent(Search_Activity.this,Search_Hit_Activity.class);
                         String str = search_hit.get(position);
@@ -120,6 +124,7 @@ public class Search_Activity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.search_base);
         adapter.clear();
         String str = editText.getText().toString();
+        String str1 = str + no_Item;
         search_hit.clear();
         number_hit.clear();
         for (int i = 0; i < search.size();i++){
@@ -152,9 +157,10 @@ public class Search_Activity extends AppCompatActivity {
                 }else if (i <= 142){
                     search_hit.add("dye");
                     number_hit.add(i-132);
-                }else{
+                }else if (i <= 179){
                     search_hit.add("other");
                     number_hit.add(i-143);
+                }else {
                 }
             }
         }

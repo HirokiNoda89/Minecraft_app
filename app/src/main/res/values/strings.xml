@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">minecraft_memo2</string>
+    <string name="app_name">マイクラ座標管理</string>
     <string name="title_activity_wood">WoodActivity</string>
     <string name="title_activity_ore">OreActivity</string>
     <string name="web_1"><u>精錬</u></string>

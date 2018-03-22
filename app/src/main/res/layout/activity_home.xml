@@ -8,12 +8,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/mine_image15"
     tools:context="to.msn.wings.minecraft_memo2.recipe.BaseActivity">
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listview"></ListView>
+        android:id="@+id/listview"
+        android:divider="@null"></ListView>
 
 </LinearLayout>
 

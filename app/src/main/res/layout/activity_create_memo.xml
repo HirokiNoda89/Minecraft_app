@@ -9,24 +9,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="name"
+        android:inputType="text"
         android:id="@+id/body"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="X"
+        android:inputType="number"
         android:id="@+id/X"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Y"
+        android:inputType="number"
         android:id="@+id/Y"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Z"
+        android:inputType="number"
         android:id="@+id/Z"/>
 
     <ImageView

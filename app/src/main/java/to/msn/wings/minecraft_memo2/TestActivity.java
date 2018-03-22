@@ -1,8 +1,10 @@
 package to.msn.wings.minecraft_memo2;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
@@ -10,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
@@ -18,9 +21,16 @@ import android.widget.TextView;
 
 public class TestActivity extends AppCompatActivity {
 
+    private static final String TAG = "TestActivity";
+
     MemoOpenHelper helper = null;
     String id = "";
     ImageView imageView;
+    LinearLayout imageLayout;
+    Bitmap bitmap2;
+    Bitmap bitmap1;
+    int height;
+    int width;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,24 +47,36 @@ public class TestActivity extends AppCompatActivity {
         Intent intent = getIntent();
         id = intent.getStringExtra("id");
         SQLiteDatabase db = helper.getReadableDatabase();
-        imageView = (ImageView) findViewById(R.id.imgView);
+        imageView = (ImageView) findViewById(R.id.imageView);
+        Resources resources = getResources();
+
 
         try{
-            Cursor c = db.rawQuery("select body,xyz,img from MEMO_TABLE where uuid = '"+ id +"'", null);
+            Cursor c = db.rawQuery("select body,xyz,img,width,height from MEMO_TABLE where id = '"+ id +"'", null);
             boolean next = c.moveToFirst();
             while (next){
                 String dispBody = c.getString(0);
                 String dispXyz = c.getString(1);
                 String bmpstr = c.getString(2);
-                byte[] bytes = Base64.decode(bmpstr,Base64.DEFAULT);
-                imageView.setImageBitmap(BitmapFactory.decodeByteArray(bytes,0,bytes.length));
+                width = c.getInt(3);
+                height = c.getInt(4);
+
+                if (bmpstr != null ){
+                    byte[] bytes = Base64.decode(bmpstr,Base64.DEFAULT);
+                    bitmap1 = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+                    bitmap2 = Bitmap.createScaledBitmap(bitmap1,width,height,false);
+                }else{
+                    bitmap2 = BitmapFactory.decodeResource(resources,R.drawable.no_image);
+                }
+
                 TextView body = (TextView) findViewById(R.id.textView1);
                 TextView xyzbody = (TextView) findViewById(R.id.textView2);
-                body.setText(dispBody,TextView.BufferType.NORMAL);
-                xyzbody.setText(dispXyz,TextView.BufferType.NORMAL);
+                body.setText(dispBody, TextView.BufferType.NORMAL);
+                xyzbody.setText(dispXyz, TextView.BufferType.NORMAL);
+                imageView.setImageBitmap(bitmap2);
                 next = c.moveToNext();
 
-        }
+            }
         }finally {
             db.close();
         }
@@ -64,3 +86,4 @@ public class TestActivity extends AppCompatActivity {
         finish();
     }
 }
+

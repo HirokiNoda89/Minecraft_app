@@ -1,6 +1,21 @@
 package to.msn.wings.minecraft_memo2;
 
 import android.app.Application;
+import android.content.ContentResolver;
+import android.content.ContentUris;
+import android.content.Context;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.provider.DocumentsContract;
+import android.provider.MediaStore;
+import android.util.Log;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * Created by 4163104 on 2017/12/18.
@@ -18,6 +33,7 @@ public class Globals extends Application {
     public String[] brewing_member = {""};
     public String[] dye_member = {""};
     public String[] other_member = {""};
+    private final static String TAG = home.class.getSimpleName();
 
     public void GlobalsInit(){
         base_member = new String[] {"木材", "棒", "松明", "作業台", "かまど", "チェスト", "ベッド"};
@@ -47,5 +63,111 @@ public class Globals extends Application {
                 "鉄格子","カーペット","板ガラス","色付きガラス板","骨粉","スイカの種","カボチャの種","エンダーアイ","エンダーチェスト",
                 "花火の星","ロケット花火","旗","防具立て","エンダークリスタル","エンドロッド","シュルカーボックス"};
     }
+
+    /**
+     * 選択された画像ファイルパスを返す
+     * @param context
+     * @param uri
+     * @return
+     */
+    public static String getImagePath(Context context, Uri uri) {
+
+        String retPath = "";
+        String id;
+
+        if (uri == null) return retPath;
+
+        {
+
+            // 画像のファイルパスを取得
+            Log.i(TAG, "uri.getAuthority(): " + (uri.getAuthority()));
+            Cursor cursor = null;
+            switch (uri.getAuthority()) {
+                case "com.android.providers.media.documents":
+                    //ギャラリーからの場合
+                    id = DocumentsContract.getDocumentId(uri);
+                    String selection = "_id=?";
+                    String[] selectionArgs = new String[]{id.split(":")[1]};
+                    cursor = context.getContentResolver().query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, new String[]{MediaStore.Images.Media.DATA}, selection, selectionArgs, null);
+
+                    if (cursor != null) {
+                        // ファイルパスを取得して保存
+                        if (cursor.moveToFirst()) {
+                            retPath = cursor.getString(0);
+                        }
+                        cursor.close();
+                    }
+                    break;
+
+                case "com.android.providers.downloads.documents":
+                    // ダウンロードからの場合
+                    id = DocumentsContract.getDocumentId(uri);
+                    Uri docUri = ContentUris.withAppendedId(Uri.parse("content://downloads/public_downloads"), Long.valueOf(id));
+                    cursor = context.getContentResolver().query(docUri, new String[]{MediaStore.Images.Media.DATA}, null, null, null);
+
+                    if (cursor != null) {
+                        // ファイルパスを取得して保存
+                        if (cursor.moveToFirst()) {
+                            retPath = cursor.getString(0);
+                        }
+                        cursor.close();
+                    }
+                    break;
+
+                case "media":
+                    // その他
+                    try {
+                        String[] projection = {MediaStore.MediaColumns.DATA};
+                        // 画像のファイルパスを取得する
+                        cursor = context.getContentResolver().query(uri, projection, null, null, null);
+                        if (cursor != null) {
+                            if (cursor.moveToFirst()) {
+                                retPath = cursor.getString(0);
+                            }
+                            cursor.close();
+                            if (retPath != null) {
+                                File file = new File(retPath);
+                            }
+                        }
+                    } catch (Exception e) {
+                        Log.e(TAG, "画像パスの取得失敗k: " + e.getMessage());
+                    }
+                    break;
+
+                default:
+                    break;
+            }
+
+
+            Log.i(TAG, "選択された画像: " + retPath);
+            return retPath;
+        }
+    }
+
+    public static Bitmap setupBackgroundBitmap(ContentResolver contentResolver, String imagePath) {
+
+        Bitmap bitmap = null;
+        File file = new File(imagePath);
+        Log.i(TAG,"file:"+file);
+        try {
+            Uri uri = Uri.fromFile(file);
+            Log.i(TAG,"uri:"+uri);
+
+            InputStream inputStream = new FileInputStream(file);
+
+            Log.i(TAG,"inputStream: "+inputStream);
+
+            bitmap = BitmapFactory.decodeStream(inputStream, null, null);
+            inputStream.close();
+
+
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return bitmap;
+    }
+
 
 }

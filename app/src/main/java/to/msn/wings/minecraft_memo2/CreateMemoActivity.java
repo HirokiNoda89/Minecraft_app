@@ -1,5 +1,6 @@
 package to.msn.wings.minecraft_memo2;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -14,7 +15,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.ByteArrayOutputStream;
@@ -23,40 +23,44 @@ import java.io.InputStream;
 import java.util.UUID;
 
 public class CreateMemoActivity extends AppCompatActivity {
+    //TODO
+    /*
+    * ファイルパスで画像表示
+    * */
 
     MemoOpenHelper helper = null;
     boolean newFlag = false;
     String id = "";
-    ImageView img;
     private static final int READ_REQUEST_CODE = 10000;
     Bitmap bitmap;
-    String bmpstr;
     ImageButton imgbtn;
+    int width;
+    int height;
+    String path2;
+    byte[] path1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_memo);
 
-
-        img = (ImageView)findViewById(R.id.imgView);
         imgbtn = (ImageButton) findViewById(R.id.imgbtn);
 
-        if(helper == null){
+        if (helper == null) {
             helper = new MemoOpenHelper(CreateMemoActivity.this);
         }
         Intent intent = this.getIntent();
         id = intent.getStringExtra("id");
-        if(id.equals("")){
+        if (id.equals("")) {
             newFlag = true;
-        }else{
+        } else {
             SQLiteDatabase db = helper.getWritableDatabase();
             try {
-                Cursor c = db.rawQuery("select body,xyz,img from MEMO_TABLE where uuid = '"+ id +"'", null);
+                Cursor c = db.rawQuery("select body,xyz,img,width,height from MEMO_TABLE where uuid = '" + id + "'", null);
                 boolean next = c.moveToFirst();
                 while (next) {
                     String dispBody = c.getString(0);
-                    EditText body = (EditText)findViewById(R.id.body);
+                    EditText body = (EditText) findViewById(R.id.body);
                     EditText Xinfo = (EditText) findViewById(R.id.X);
                     EditText Yinfo = (EditText) findViewById(R.id.Y);
                     EditText Zinfo = (EditText) findViewById(R.id.Z);
@@ -74,7 +78,7 @@ public class CreateMemoActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                EditText body = (EditText)findViewById(R.id.body);
+                EditText body = (EditText) findViewById(R.id.body);
                 EditText Xinfo = (EditText) findViewById(R.id.X);
                 EditText Yinfo = (EditText) findViewById(R.id.Y);
                 EditText Zinfo = (EditText) findViewById(R.id.Z);
@@ -82,20 +86,30 @@ public class CreateMemoActivity extends AppCompatActivity {
                 String X = Xinfo.getText().toString();
                 String Y = Yinfo.getText().toString();
                 String Z = Zinfo.getText().toString();
-                String xyzStr ="X:" + X + "," + "Y:" + Y + "," + "Z:" + Z;
+                String xyzStr = "X:" + X + "," + "Y:" + Y + "," + "Z:" + Z;
 
                 SQLiteDatabase db = helper.getWritableDatabase();
                 try {
-                    if(newFlag){
+                    if (newFlag) {
                         id = UUID.randomUUID().toString();
-                        db.execSQL("insert into MEMO_TABLE(uuid, body, xyz, img) VALUES('"+ id +"', '"+ bodyStr + "' , '" + xyzStr + "' , '" + bmpstr + "' )");
-                    }else{
+
+                        ContentValues cv = new ContentValues();
+                        cv.put("body", bodyStr);
+                        cv.put("xyz", xyzStr);
+                        cv.put("img", path2);
+                        cv.put("width", width);
+                        cv.put("height", height);
+                        db.insert("MEMO_TABLE", null, cv);
+
+
+                    } else {
                         //更新処理
                     }
                 } finally {
                     db.close();
                 }
-                Intent intent = new Intent(CreateMemoActivity.this,ListActivity.class);
+
+                Intent intent = new Intent(CreateMemoActivity.this, ListActivity.class);
                 startActivity(intent);
             }
         });
@@ -106,7 +120,7 @@ public class CreateMemoActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CreateMemoActivity.this,ListActivity.class);
+                Intent intent = new Intent(CreateMemoActivity.this, ListActivity.class);
                 startActivity(intent);
             }
         });
@@ -115,12 +129,12 @@ public class CreateMemoActivity extends AppCompatActivity {
     public void gallery(View v) {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         intent.setType("image/*");
-        startActivityForResult(intent,READ_REQUEST_CODE);
+        startActivityForResult(intent, READ_REQUEST_CODE);
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data){
-        if (requestCode == READ_REQUEST_CODE && resultCode == RESULT_OK){
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == READ_REQUEST_CODE && resultCode == RESULT_OK) {
 
             InputStream in = null;
             try {
@@ -130,12 +144,23 @@ public class CreateMemoActivity extends AppCompatActivity {
             }
             Bitmap bmp = BitmapFactory.decodeStream(in);
             imgbtn.setImageBitmap(bmp);
-            //img.setImageBitmap(bmp);
 
             bitmap = ((BitmapDrawable) imgbtn.getDrawable()).getBitmap();
+            width = bitmap.getWidth();
+            height = bitmap.getHeight();
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
-            bmpstr = Base64.encodeToString(baos.toByteArray(), Base64.DEFAULT);
+            if (bitmap.getHeight() >= 2000 || bitmap.getWidth() >= 2000) {
+                Bitmap bitmap1 = Bitmap.createScaledBitmap(bitmap, width / 2, height / 2, false);
+                bitmap1.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+            } else {
+                bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+            }
+
+
+            path1 = Base64.encode(baos.toByteArray(), Base64.DEFAULT);
+            path2 = Base64.encodeToString(baos.toByteArray(), Base64.DEFAULT);
+
         }
     }
+
 }

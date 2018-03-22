@@ -43,8 +43,6 @@ public class Search_Hit_Activity extends AppCompatActivity {
         setContentView(R.layout.base_wood);
         TextView textView = (TextView)findViewById(viewId);
         textView.setText(res.getString(strId));
-//        ImageView imageView1 = (ImageView)findViewById(imgviewId);
-//        imageView1.setImageDrawable(res.getDrawable(draId));
         ImageView imageView = (ImageView) findViewById(R.id.gif1);
         GlideDrawableImageViewTarget target = new GlideDrawableImageViewTarget(imageView);
         Glide.with(this).load(draId).into(target);

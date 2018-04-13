@@ -1,6 +1,7 @@
 package com.morijyobi.minecraft;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -10,7 +11,6 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -22,7 +22,8 @@ import android.widget.TextView;
 public class TestActivity extends AppCompatActivity {
 
     private static final String TAG = "TestActivity";
-
+    private SharedPreferences preference;
+    private SharedPreferences.Editor editor;
     MemoOpenHelper helper = null;
     String id = "";
     ImageView imageView;
@@ -80,10 +81,6 @@ public class TestActivity extends AppCompatActivity {
         }finally {
             db.close();
         }
-    }
-
-    public void onClick(View v){
-        finish();
     }
 }
 

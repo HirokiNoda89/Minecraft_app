@@ -2,50 +2,85 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.morijyobi.minecraft">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher2"
         android:label="マイクラ座標管理"
+
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:name="com.morijyobi.minecraft.Globals">
-        <activity android:name="com.morijyobi.minecraft.home">
+        <activity android:name="com.morijyobi.minecraft.home"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.morijyobi.minecraft.ListActivity" />
+        <activity android:name="com.morijyobi.minecraft.ListActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name="com.morijyobi.minecraft.CreateMemoActivity"
-            android:label="test" />
-        <activity android:name="com.morijyobi.minecraft.TestActivity"/>
-        <activity android:name="com.morijyobi.minecraft.Search_Activity"/>
-        <activity android:name="com.morijyobi.minecraft.Search_Hit_Activity"/>
-        <activity android:name="com.morijyobi.minecraft.Web_Activity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.RecipeActivity" />
-        <activity android:name="com.morijyobi.minecraft.recipe.BaseActivity" />
-        <activity android:name="com.morijyobi.minecraft.recipe.BlockActivity" />
-        <activity android:name="com.morijyobi.minecraft.recipe.ToolActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.ArmorActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.TruckActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.MachineActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.FoodActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.BrewingActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.DyeActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.OtherActivity"/>
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.TestActivity"
+            />
+        <activity android:name="com.morijyobi.minecraft.Search_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.Search_Hit_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.Web_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.RecipeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.BaseActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.BlockActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.ToolActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.ArmorActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.TruckActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.MachineActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.FoodActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.BrewingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.DyeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.OtherActivity"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name="com.morijyobi.minecraft.recipe.Base_WoodActivity" />
-        <activity android:name="com.morijyobi.minecraft.recipe.Block_OreActivity" />
-        <activity android:name="com.morijyobi.minecraft.recipe.Tool_AxeActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.Armor_HelmetsActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.Truck_MinecartActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.Machine_Wooden_doorActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.Food_BowlActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.Brewing_StandActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.Dye_RoseRedActivity"/>
-        <activity android:name="com.morijyobi.minecraft.recipe.Other_EnchantmentTable_Activity"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Base_WoodActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Block_OreActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Tool_AxeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Armor_HelmetsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Truck_MinecartActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Machine_Wooden_doorActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Food_BowlActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Brewing_StandActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Dye_RoseRedActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.morijyobi.minecraft.recipe.Other_EnchantmentTable_Activity"
+            android:screenOrientation="portrait"/>
+
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

@@ -3,6 +3,7 @@ package com.morijyobi.minecraft;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -11,6 +12,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,7 +39,6 @@ public class ListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list);
         setTitle("メモ");
         listView = (ListView) findViewById(R.id.memoList);
-
 
         if (helper == null) {
             helper = new MemoOpenHelper(ListActivity.this);
@@ -72,19 +73,20 @@ public class ListActivity extends AppCompatActivity {
             db.close();
         }
 
-        for (int i = 0; i < memoList.size(); i++){
-            if (memoList.size() != 0) {
-                if (memoList.get(i).get("image") == null){
-                    Resources resources = getResources();
-                    bitmap = BitmapFactory.decodeResource(resources,R.drawable.no_image);
-                }else{
-                    byte[] bytes = Base64.decode(memoList.get(i).get("image"), Base64.DEFAULT);
-                    bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
-                }
-                SampleListItem item = new SampleListItem(bitmap, memoList.get(i).get("body") + " " +  memoList.get(i).get("xyz"));
-                listItems.add(item);
-            }
-        }
+//        for (int i = 0; i < memoList.size(); i++){
+//            if (memoList.size() != 0) {
+//                if (memoList.get(i).get("image") == null){
+//                    Resources resources = getResources();
+//                    bitmap = BitmapFactory.decodeResource(resources,R.drawable.no_image);
+//                }else{
+//                    byte[] bytes = Base64.decode(memoList.get(i).get("image"), Base64.DEFAULT);
+//                    bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+//                }
+//                SampleListItem item = new SampleListItem(bitmap, memoList.get(i).get("body") + " " +  memoList.get(i).get("xyz"));
+//                listItems.add(item);
+//            }
+//        }
+        Item_set();
 
         adapter = new SampleListAdapter(this,R.layout.samplelist_item,listItems);
         listView.setAdapter(adapter);
@@ -113,6 +115,21 @@ public class ListActivity extends AppCompatActivity {
         });
 
         listView.setOnItemLongClickListener(onItemLongClickListener);
+
+        SharedPreferences preferences = getSharedPreferences("UnixTime",MODE_PRIVATE);
+        long time = preferences.getLong("setTime",0);
+        long currentTimeMillis = System.currentTimeMillis();
+
+        if (time <= currentTimeMillis){
+            Log.i("test","YES");
+            Log.i("test_number1", String.valueOf(time));
+            Log.i("test_number2", String.valueOf(currentTimeMillis));
+
+        }else{
+            Log.i("test","NO");
+            Log.i("test_number1", String.valueOf(time));
+            Log.i("test_number2", String.valueOf(currentTimeMillis));
+        }
 
     }
 
@@ -160,7 +177,7 @@ public class ListActivity extends AppCompatActivity {
         dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
+                //
             }
         });
         dialog.show();
@@ -192,5 +209,21 @@ public class ListActivity extends AppCompatActivity {
                 break;
         }
         return true;
+    }
+
+    public void Item_set(){
+        for (int i = 0; i < memoList.size(); i++){
+            if (memoList.size() != 0) {
+                if (memoList.get(i).get("image") == null){
+                    Resources resources = getResources();
+                    bitmap = BitmapFactory.decodeResource(resources,R.drawable.no_image);
+                }else{
+                    byte[] bytes = Base64.decode(memoList.get(i).get("image"), Base64.DEFAULT);
+                    bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+                }
+                SampleListItem item = new SampleListItem(bitmap, memoList.get(i).get("body") + " " +  memoList.get(i).get("xyz"));
+                listItems.add(item);
+            }
+        }
     }
 }

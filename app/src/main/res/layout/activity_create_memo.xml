@@ -33,11 +33,6 @@
         android:inputType="number"
         android:id="@+id/Z"/>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/imgView" />
-
     
     <ScrollView
         android:layout_width="match_parent"

@@ -5,13 +5,18 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.morijyobi.minecraft.R;
+import com.morijyobi.minecraft.SpotParams;
 import com.morijyobi.minecraft.home;
+
+import jp.co.imobile.sdkads.android.ImobileSdkAd;
 
 /**
  * Created by 4163104 on 2017/10/17.
@@ -53,6 +58,7 @@ public class Dye_RoseRedActivity extends AppCompatActivity {
                 imageView1.setImageDrawable(res.getDrawable(draId1));
                 ImageView imageView2 = (ImageView)findViewById(imgviewId2);
                 imageView2.setImageDrawable(res.getDrawable(draId2));
+                CM();
                 break;
             case 1:
             case 2:
@@ -69,6 +75,7 @@ public class Dye_RoseRedActivity extends AppCompatActivity {
                 textView.setText(res.getString(strId));
                 imageView1 = (ImageView)findViewById(imgviewId1);
                 imageView1.setImageDrawable(res.getDrawable(draId1));
+                CM();
                 break;
         }
     }
@@ -90,5 +97,23 @@ public class Dye_RoseRedActivity extends AppCompatActivity {
                 break;
         }
         return true;
+    }
+
+    public void CM(){
+        //広告
+        // スポット情報を設定します
+        ImobileSdkAd.registerSpotInline(this, SpotParams.PUBLISHER_ID, SpotParams.MEDIA_ID, SpotParams.BANNER_SPOT_ID);
+        // 広告の取得を開始します
+        ImobileSdkAd.start(SpotParams.BANNER_SPOT_ID);
+
+        // 広告を表示するViewを作成します
+        FrameLayout imobileAdLayout = new FrameLayout(this);
+        FrameLayout.LayoutParams imobileAdLayoutParam = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        // 広告の表示位置を指定
+        imobileAdLayoutParam.gravity = (Gravity.BOTTOM | Gravity.CENTER);
+        //広告を表示するLayoutをActivityに追加します
+        addContentView(imobileAdLayout, imobileAdLayoutParam);
+        // 広告を表示します
+        ImobileSdkAd.showAd(this, SpotParams.BANNER_SPOT_ID, imobileAdLayout);
     }
 }

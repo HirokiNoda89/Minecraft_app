@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -44,6 +45,8 @@ public class TestActivity extends AppCompatActivity {
         if (helper == null){
             helper = new MemoOpenHelper(TestActivity.this);
         }
+
+
 
         Intent intent = getIntent();
         id = intent.getStringExtra("id");
@@ -82,5 +85,10 @@ public class TestActivity extends AppCompatActivity {
             db.close();
         }
     }
+
+    public void onClick(View v){
+        finish();
+    }
+
 }
 
